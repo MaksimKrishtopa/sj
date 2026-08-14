@@ -40,6 +40,7 @@ a { color: inherit; }
   padding: 11px 18px; font-weight: 800; text-decoration: none; display: inline-flex; cursor: pointer;
 }
 .vg-btn.ghost { background: transparent; color: var(--v-navy); border: 1px solid var(--v-navy); }
+.vg-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 0; }
 .burger { display: none; background: none; border: 0; font-size: 22px; }
 
 .vg-hero {
@@ -80,6 +81,22 @@ h1 { font-size: clamp(28px, 4vw, 42px); color: var(--v-navy); line-height: 1.15;
 .lead-form label { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; font-size: 13px; }
 .lead-form input, .lead-form textarea { border: 1px solid var(--v-line); border-radius: 8px; padding: 10px 12px; font: inherit; }
 .lead-form .check { flex-direction: row; align-items: center; gap: 8px; }
+.lead-form button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--v-accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.lead-form button:hover { filter: brightness(0.95); }
 .lead-ok { color: #2f855a; font-weight: 700; }
 
 .vg-footer { background: var(--v-navy); color: #d5deea; padding: 48px 0 24px; }

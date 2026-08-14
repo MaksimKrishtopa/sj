@@ -91,6 +91,22 @@ h1 { font-size: clamp(30px, 4.4vw, 48px); line-height: 1.12; color: var(--j-navy
 .lead-form label { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; font-size: 13px; }
 .lead-form input, .lead-form textarea { border: 1px solid var(--j-line); border-radius: 8px; padding: 10px 12px; font: inherit; }
 .lead-form .check { flex-direction: row; align-items: center; gap: 8px; }
+.lead-form button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--j-accent);
+  color: #1b2a4a;
+  font: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.lead-form button:hover { filter: brightness(0.96); }
 .lead-ok { color: var(--j-grow); font-weight: 700; }
 
 .jz-footer { background: var(--j-navy); color: #c9d2e3; padding: 48px 0 24px; }

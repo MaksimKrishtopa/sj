@@ -154,6 +154,22 @@ th { background: #faf7ee; color: var(--navy); }
 .lead-form.dark h2 { color: #fff; }
 .lead-form label { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; font-size: 13px; }
 .lead-form .check { flex-direction: row; align-items: center; gap: 8px; }
+.lead-form button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.lead-form button:hover { background: var(--accent-h); }
 .lead-ok { color: var(--ok); font-weight: 700; }
 
 .bt-footer { background: var(--navy); color: #d7deea; padding: 48px 0 24px; }
