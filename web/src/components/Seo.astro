@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  url: string;
+  type?: string;
+  jsonLd?: Record<string, unknown>[];
+}
+const { title, description, url, type = 'website', jsonLd = [] } = Astro.props;
+const canonical = new URL(url, Astro.site).toString();
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{jsonLd.map((obj) => (
+  <script type="application/ld+json" set:html={JSON.stringify(obj)} />
+))}

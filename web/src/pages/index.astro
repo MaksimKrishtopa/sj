@@ -1,0 +1,34 @@
+---
+import { absHref } from '../lib/paths';
+import '../styles/hub.css';
+---
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Три SEO-сайта — бетон, SEO Jazz, вагон-дома</title>
+    <meta name="description" content="Три независимых SEO-сайта: бетонный завод в Жуковском, агентство SEO Jazz и производство вагон-домов." />
+    <link rel="canonical" href={new URL(absHref(''), Astro.site).toString()} />
+  </head>
+  <body class="hub">
+    <main class="hub-wrap">
+      <h1>Три сайта. Три ниши. Одна SEO-механика.</h1>
+      <p>Статическая сборка под GitHub Pages. Каждый сайт — отдельный раздел со своей дизайн-системой, контентом архива и коммерческой воронкой.</p>
+      <div class="hub-grid">
+        <a class="hub-card b" href={absHref('beton/')}>
+          <h2>Бетон Жуковский</h2>
+          <span>ПСК Прогресс · завод · доставка · калькулятор</span>
+        </a>
+        <a class="hub-card j" href={absHref('seojazz/')}>
+          <h2>SEO Jazz</h2>
+          <span>Заявки, GEO/AI, тарифы и отраслевая матрица</span>
+        </a>
+        <a class="hub-card v" href={absHref('vagon-dom/')}>
+          <h2>Вагон-дома</h2>
+          <span>Каталог, модели и 507 региональных посадочных</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

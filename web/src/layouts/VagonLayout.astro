@@ -1,0 +1,77 @@
+---
+import Seo from '../components/Seo.astro';
+import { siteHref, absHref } from '../lib/paths';
+import { VAGON_BRAND, VAGON_PHONE, VAGON_PHONE_TEL } from '../lib/vagon';
+import '../styles/vagon.css';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  jsonLd?: Record<string, unknown>[];
+}
+const { title, description, path, jsonLd = [] } = Astro.props;
+---
+<!doctype html>
+<html lang="ru">
+  <head>
+    <Seo title={title} description={description} url={siteHref('vagon-dom', path)} jsonLd={jsonLd} />
+    <link rel="icon" href={absHref('favicon-vagon.svg')} type="image/svg+xml" />
+  </head>
+  <body class="vg">
+    <header class="vg-header">
+      <div class="wrap bar">
+        <a class="vg-logo" href={siteHref('vagon-dom')}>
+          <span class="vg-mark">ВД</span>
+          {VAGON_BRAND}
+        </a>
+        <nav class="vg-nav" data-nav>
+          <a href={siteHref('vagon-dom', '/vagon-doma/')}>Вагон-дома</a>
+          <a href={siteHref('vagon-dom', '/modulnye-zdaniya/')}>Модульные</a>
+          <a href={siteHref('vagon-dom', '/vahtovye-poselki/')}>Вахта</a>
+          <a href={siteHref('vagon-dom', '/bytovki/')}>Бытовки</a>
+          <a href={siteHref('vagon-dom', '/v-nalichii/')}>В наличии</a>
+          <a href={siteHref('vagon-dom', '/o-kompanii/')}>О компании</a>
+          <a href={siteHref('vagon-dom', '/kontakty/')}>Контакты</a>
+        </nav>
+        <div class="vg-head-cta">
+          <a href={`tel:${VAGON_PHONE_TEL}`}>{VAGON_PHONE}</a>
+          <a class="vg-btn" href="#lead">Рассчитать</a>
+          <button class="burger" data-burger aria-label="Меню">☰</button>
+        </div>
+      </div>
+    </header>
+    <slot />
+    <footer class="vg-footer">
+      <div class="wrap ft-grid">
+        <div>
+          <strong>{VAGON_BRAND}</strong>
+          <p>Собственное производство. ГОСТ Р 58760-2019. Срок от 4 дней, гарантия 12 месяцев, доставка по РФ и СНГ.</p>
+        </div>
+        <div>
+          <a href={siteHref('vagon-dom', '/vagon-doma/zhilye/')}>Жилые</a>
+          <a href={siteHref('vagon-dom', '/vagon-doma/stolovye/')}>Столовые</a>
+          <a href={siteHref('vagon-dom', '/vagon-doma/dushevye/')}>Душевые</a>
+          <a href={siteHref('vagon-dom', '/ceny/')}>Цены</a>
+        </div>
+        <div>
+          <a href={siteHref('vagon-dom', '/dostavka/')}>Доставка</a>
+          <a href={siteHref('vagon-dom', '/garantiya/')}>Гарантия</a>
+          <a href={siteHref('vagon-dom', '/nashi-raboty/')}>Наши работы</a>
+          <a href={siteHref('vagon-dom', '/lizing/')}>Лизинг</a>
+        </div>
+        <div>
+          <a href={`tel:${VAGON_PHONE_TEL}`}>{VAGON_PHONE}</a>
+          <p>Бренд и финальные контакты филиала — по данным заказчика.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="sticky-bar">
+      <a class="call" href={`tel:${VAGON_PHONE_TEL}`}>Позвонить</a>
+      <a class="ask" href="#lead">Заявка</a>
+    </div>
+    <script>
+      import '../scripts/lead.ts';
+    </script>
+  </body>
+</html>

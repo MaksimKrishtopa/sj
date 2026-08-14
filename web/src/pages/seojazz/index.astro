@@ -1,0 +1,112 @@
+---
+import JazzLayout from '../../layouts/JazzLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import { siteHref } from '../../lib/paths';
+import { JAZZ_CASES, JAZZ_TARIFFS, jazzFaqFallback } from '../../lib/seojazz';
+
+const faq = jazzFaqFallback();
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'SEO Jazz',
+    url: 'https://seojazz.ru',
+    telephone: '+7-499-990-55-46',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
+---
+<JazzLayout
+  title="SEO Jazz — продвижение сайтов за заявки и выручку, не за позиции"
+  description="SEO-агентство SEO Jazz: 107 650 заявок клиентам за год. SEO, GEO/AI, ниши, CMS и создание сайтов. Финансовая гарантия по KPI. Москва и Россия."
+  path="/"
+  jsonLd={jsonLd}
+>
+  <section class="jz-hero">
+    <div class="wrap jz-hero-grid">
+      <div>
+        <div class="jz-kicker">SEO как система привлечения клиентов</div>
+        <div class="jz-metric">107 650<em>+</em></div>
+        <h1>заявок получили клиенты из Яндекс и Google за год</h1>
+        <p>Платите за заявки и выручку, а не за позиции. Без сложной терминологии и отчётов ради отчётов. GEO и нейросети — в одной системе с классическим SEO.</p>
+        <div class="jz-actions">
+          <a class="jz-btn" href="#lead">Получить рекомендации</a>
+          <a class="jz-btn ghost" href={siteHref('seojazz', '/kejsy/')}>Смотреть кейсы</a>
+        </div>
+      </div>
+      <aside class="jz-panel">
+        <strong>8 из 10</strong>
+        <span>компаний остаются с нами на постоянной основе</span>
+        <p>Тарифы 45–220 тыс ₽/мес. KPI и финансовая гарантия — в договоре.</p>
+        <p>До 15 000 заявок ежемесячно привлекаем для клиентов.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Направления, которые приносят деньги</h2>
+      <div class="jz-grid g3">
+        <a class="jz-card" href={siteHref('seojazz', '/uslugi/')}><h3>Форматы SEO</h3><p>По позициям, по трафику, за результат и лиды. Яндекс и Google.</p></a>
+        <a class="jz-card" href={siteHref('seojazz', '/geo-prodvizhenie/')}><h3>GEO / AI</h3><p>ChatGPT, Алиса, Perplexity, Gemini, AI Overview. Главное УТП.</p></a>
+        <a class="jz-card" href={siteHref('seojazz', '/seo-po-otraslyam/')}><h3>Отрасли</h3><p>Медицина, стройка, недвижимость, e-com — с кейсами в деньгах.</p></a>
+        <a class="jz-card" href={siteHref('seojazz', '/seo-prodvizhenie-po-cms/')}><h3>SEO по CMS</h3><p>WordPress, Битрикс, Tilda, OpenCart и ещё 11 движков.</p></a>
+        <a class="jz-card" href={siteHref('seojazz', '/seo-po-tipu-sajta/')}><h3>Типы сайтов</h3><p>Магазины, лендинги, корпоративные, каталоги, маркетплейсы.</p></a>
+        <a class="jz-card" href={siteHref('seojazz', '/sozdanie-sajtov/')}><h3>Создание сайтов</h3><p>Сайт сразу под заявки, SEO и GEO — не витрина «для галочки».</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <h2>Тарифы с KPI, а не с обещанием ТОП-1</h2>
+      <div class="jz-grid g5">
+        {JAZZ_TARIFFS.map((t) => (
+          <article class="jz-card">
+            <h3>{t.name}</h3>
+            <b>{t.price}</b>
+            <p>{t.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Кейсы: точка А → точка B</h2>
+      <div class="jz-grid g4">
+        {JAZZ_CASES.map((c) => (
+          <article class="jz-card">
+            <h3>{c.name}</h3>
+            <p>{c.niche}</p>
+            <b>{c.metric}</b>
+            <p>{c.extra}</p>
+          </article>
+        ))}
+      </div>
+      <p><a href={siteHref('seojazz', '/kejsy/')}>Все кейсы →</a></p>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <Faq items={faq} />
+    </div>
+  </section>
+
+  <section class="section" id="lead">
+    <div class="wrap">
+      <LeadForm title="Получить рекомендации" subtitle="Разберём сайт и скажем, откуда взять заявки" cta="Получить рекомендации" />
+    </div>
+  </section>
+</JazzLayout>

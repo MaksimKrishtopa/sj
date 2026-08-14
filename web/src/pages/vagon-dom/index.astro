@@ -1,0 +1,135 @@
+---
+import VagonLayout from '../../layouts/VagonLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import { siteHref } from '../../lib/paths';
+import { VAGON_BRAND, VAGON_CITIES, VAGON_SERVICES } from '../../lib/vagon';
+
+const faq = [
+  { q: 'Чем вагон-дом отличается от бытовки?', a: 'Вагон-дом капитальнее: усиленный каркас и утепление под круглогодичную эксплуатацию, срок службы от 10 лет. Бытовка — временное бытовое помещение.' },
+  { q: 'Сколько стоит вагон-дом?', a: 'От 490 000 ₽ за базовую модель. Цена зависит от размеров, комплектации и исполнения.' },
+  { q: 'За сколько изготовят?', a: 'От 4 дней в зависимости от модели и загрузки производства.' },
+  { q: 'Есть ли доставка в мой регион?', a: 'Да, автомобильным и ж/д транспортом по всей России и СНГ.' },
+  { q: 'Можно заказать по индивидуальному проекту?', a: 'Да. Согласуем размеры, планировку и комплектацию под задачу.' },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: VAGON_BRAND,
+    telephone: '+7-922-510-05-55',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
+---
+<VagonLayout
+  title={`${VAGON_BRAND} — производство вагон-домов и модульных зданий, доставка по России`}
+  description={`${VAGON_BRAND}: вагон-дома, бытовки, модульные здания и вахтовые посёлки от производителя. Срок от 4 дней, гарантия 12 мес., доставка по РФ. Цена от 490 000 ₽.`}
+  path="/"
+  jsonLd={jsonLd}
+>
+  <section class="vg-hero">
+    <div class="wrap vg-hero-grid">
+      <div>
+        <div class="chips">
+          <span class="chip">ГОСТ Р 58760-2019</span>
+          <span class="chip">от 4 дней</span>
+          <span class="chip">гарантия 12 мес.</span>
+        </div>
+        <h1>Производство вагон-домов и модульных зданий</h1>
+        <p>Проектируем и производим вагон-дома, бытовки и модульные здания на собственном заводе. Доставка по России и СНГ. Цена от 490 000 ₽.</p>
+        <p class="vg-price">от 490 000 ₽</p>
+        <p>
+          <a class="vg-btn" href="#lead">Рассчитать стоимость</a>
+          <a class="vg-btn ghost" href={siteHref('vagon-dom', '/vagon-doma/')}>Смотреть каталог</a>
+        </p>
+      </div>
+      <div class="vg-art" aria-hidden="true">
+        <svg viewBox="0 0 640 360" width="100%" height="360">
+          <rect x="80" y="140" width="200" height="110" rx="6" fill="#f5f7fa"/>
+          <rect x="80" y="120" width="200" height="22" fill="#e8842a"/>
+          <rect x="100" y="160" width="50" height="36" fill="#1f3a5f"/>
+          <rect x="170" y="160" width="80" height="36" fill="#2c5282"/>
+          <rect x="320" y="100" width="180" height="150" rx="6" fill="#f5f7fa"/>
+          <rect x="320" y="80" width="180" height="22" fill="#e8842a"/>
+          <rect x="340" y="130" width="60" height="40" fill="#1f3a5f"/>
+          <rect x="420" y="130" width="50" height="40" fill="#2c5282"/>
+          <circle cx="130" cy="270" r="18" fill="#1a202c"/>
+          <circle cx="230" cy="270" r="18" fill="#1a202c"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Направления производства</h2>
+      <div class="vg-grid g4">
+        <a class="vg-card" href={siteHref('vagon-dom', '/vagon-doma/')}><h3>Вагон-дома</h3><p class="price">от 490 000 ₽</p></a>
+        <a class="vg-card" href={siteHref('vagon-dom', '/modulnye-zdaniya/')}><h3>Модульные здания</h3><p>общежития, АБК, ФАП, школы</p></a>
+        <a class="vg-card" href={siteHref('vagon-dom', '/vahtovye-poselki/')}><h3>Вахтовые посёлки</h3><p>под ключ: проект → монтаж</p></a>
+        <a class="vg-card" href={siteHref('vagon-dom', '/bytovki/')}><h3>Бытовки</h3><p>для стройки и площадок</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <h2>Популярные типы</h2>
+      <div class="vg-grid g3">
+        {VAGON_SERVICES.slice(0, 9).map((s) => (
+          <a class="vg-card" href={siteHref('vagon-dom', s.parent)}>
+            <h3>{s.name}</h3>
+            <p class="price">от {s.price}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Как мы работаем</h2>
+      <div class="vg-grid g3">
+        <article class="vg-card"><h3>1. Заявка</h3><p>Фиксируем задачу, вместимость и регион поставки.</p></article>
+        <article class="vg-card"><h3>2. Проектирование</h3><p>Планировка, комплектация, исполнение на раме, санях или шасси.</p></article>
+        <article class="vg-card"><h3>3. Производство</h3><p>Собственный завод, ГОСТ Р 58760-2019, срок от 4 дней.</p></article>
+        <article class="vg-card"><h3>4. Доставка</h3><p>Авто и ж/д по России и СНГ, полная заводская готовность.</p></article>
+        <article class="vg-card"><h3>5. Сдача под ключ</h3><p>Монтаж, подключение, ввод в эксплуатацию.</p></article>
+        <article class="vg-card"><h3>6. Сервис</h3><p>Гарантия 12 месяцев, обслуживание и модернизация.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <h2>География поставок</h2>
+      <div class="link-grid">
+        {VAGON_CITIES.slice(0, 18).map((c) => (
+          <a href={siteHref('vagon-dom', `/vagon-doma-${c.slug}/`)}>{c.name}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <Faq items={faq} />
+    </div>
+  </section>
+
+  <section class="section soft" id="lead">
+    <div class="wrap">
+      <LeadForm title="Рассчитать стоимость" subtitle="Имя и телефон — перезвоним и соберём комплектацию" cta="Рассчитать стоимость" />
+    </div>
+  </section>
+</VagonLayout>

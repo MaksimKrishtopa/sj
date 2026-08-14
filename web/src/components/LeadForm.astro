@@ -1,0 +1,38 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+  cta?: string;
+  variant?: string;
+  id?: string;
+}
+const {
+  title = 'Оставить заявку',
+  subtitle = 'Перезвоним в течение 15 минут',
+  cta = 'Отправить заявку',
+  variant = '',
+  id = 'lead',
+} = Astro.props;
+---
+<form class:list={['lead-form', variant]} id={id} data-lead>
+  <h2>{title}</h2>
+  {subtitle && <p class="lead-sub">{subtitle}</p>}
+  <label>
+    <span>Имя</span>
+    <input type="text" name="name" autocomplete="name" required />
+  </label>
+  <label>
+    <span>Телефон</span>
+    <input type="tel" name="phone" autocomplete="tel" required />
+  </label>
+  <label>
+    <span>Комментарий</span>
+    <textarea name="message" rows="3"></textarea>
+  </label>
+  <label class="check">
+    <input type="checkbox" name="agree" required />
+    <span>Согласен на обработку персональных данных</span>
+  </label>
+  <button type="submit">{cta}</button>
+  <p class="lead-ok" hidden>Заявка отправлена. Мы свяжемся с вами.</p>
+</form>

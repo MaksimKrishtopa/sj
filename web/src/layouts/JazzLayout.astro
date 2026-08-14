@@ -1,0 +1,68 @@
+---
+import Seo from '../components/Seo.astro';
+import { siteHref, absHref } from '../lib/paths';
+import { JAZZ_NAV } from '../lib/seojazz';
+import '../styles/jazz.css';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  jsonLd?: Record<string, unknown>[];
+}
+const { title, description, path, jsonLd = [] } = Astro.props;
+---
+<!doctype html>
+<html lang="ru">
+  <head>
+    <Seo title={title} description={description} url={siteHref('seojazz', path)} jsonLd={jsonLd} />
+    <link rel="icon" href={absHref('favicon-jazz.svg')} type="image/svg+xml" />
+  </head>
+  <body class="jz">
+    <header class="jz-header">
+      <div class="wrap bar">
+        <a class="jz-logo" href={siteHref('seojazz')}>SEO <span>Jazz</span></a>
+        <nav class="jz-nav" data-nav>
+          {JAZZ_NAV.map((item) => (
+            <a href={siteHref('seojazz', item.href)}>{item.text}</a>
+          ))}
+        </nav>
+        <div class="jz-head-cta">
+          <a href="tel:+74999905546">+7 499 990-55-46</a>
+          <a class="jz-btn" href="#lead">Получить рекомендации</a>
+          <button class="burger" data-burger aria-label="Меню">☰</button>
+        </div>
+      </div>
+    </header>
+    <slot />
+    <footer class="jz-footer">
+      <div class="wrap ft-grid">
+        <div>
+          <strong>SEO Jazz</strong>
+          <p>Платите за заявки и выручку, а не за позиции. Москва и Россия.</p>
+        </div>
+        <div>
+          <a href={siteHref('seojazz', '/uslugi/')}>Услуги</a>
+          <a href={siteHref('seojazz', '/geo-prodvizhenie/')}>GEO / AI</a>
+          <a href={siteHref('seojazz', '/ai-seo-prodvizhenie/')}>AI-SEO</a>
+        </div>
+        <div>
+          <a href={siteHref('seojazz', '/seo-po-otraslyam/')}>Отрасли</a>
+          <a href={siteHref('seojazz', '/sozdanie-sajtov/')}>Создание сайтов</a>
+          <a href={siteHref('seojazz', '/kejsy/')}>Кейсы</a>
+        </div>
+        <div>
+          <a href="https://t.me/IldarNev">Telegram @IldarNev</a>
+          <a href="tel:+74999905546">+7 499 990-55-46</a>
+        </div>
+      </div>
+    </footer>
+    <div class="sticky-bar">
+      <a class="call" href="tel:+74999905546">Позвонить</a>
+      <a class="ask" href="#lead">Рекомендации</a>
+    </div>
+    <script>
+      import '../scripts/lead.ts';
+    </script>
+  </body>
+</html>

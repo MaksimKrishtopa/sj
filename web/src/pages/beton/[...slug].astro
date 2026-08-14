@@ -1,0 +1,50 @@
+---
+import BetonLayout from '../../layouts/BetonLayout.astro';
+import ContentBody from '../../components/ContentBody.astro';
+import { loadBetonPages } from '../../lib/beton';
+import type { PageDoc } from '../../lib/types';
+
+export function getStaticPaths() {
+  const pages = loadBetonPages().filter((p) => p.url !== '/' && /^\/[\w\-./]+$/.test(p.url));
+  const paths: { params: { slug: string }; props: { doc: PageDoc } }[] = [];
+  const seen = new Set<string>();
+  for (const page of pages) {
+    const key = page.url.replace(/^\/|\/$/g, '');
+    if (key && !seen.has(key)) {
+      seen.add(key);
+      paths.push({ params: { slug: key }, props: { doc: page } });
+    }
+    const parts = key.split('/');
+    const short = parts[parts.length - 1];
+    if (parts.length > 1 && short && !seen.has(short)) {
+      seen.add(short);
+      paths.push({ params: { slug: short }, props: { doc: page } });
+    }
+  }
+  return paths;
+}
+
+const { doc } = Astro.props;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': doc.kind === 'blog' ? 'Article' : 'WebPage',
+    headline: doc.h1,
+    description: doc.description,
+  },
+  ...(doc.faq.length
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: doc.faq.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      }]
+    : []),
+];
+---
+<BetonLayout title={doc.title} description={doc.description} path={doc.url} jsonLd={jsonLd}>
+  <ContentBody doc={doc} mount="beton" cta="Рассчитать стоимость" btnClass="btn" />
+</BetonLayout>

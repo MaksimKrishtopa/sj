@@ -1,0 +1,40 @@
+---
+import JazzLayout from '../../layouts/JazzLayout.astro';
+import ContentBody from '../../components/ContentBody.astro';
+import { loadJazzPages, jazzFaqFallback } from '../../lib/seojazz';
+import type { PageDoc } from '../../lib/types';
+
+export function getStaticPaths() {
+  return loadJazzPages()
+    .filter((p) => p.url !== '/' && /^\/[\w\-./]+$/.test(p.url))
+    .map((doc) => ({
+      params: { slug: doc.url.replace(/^\/|\/$/g, '') },
+      props: { doc },
+    }));
+}
+
+const { doc } = Astro.props as { doc: PageDoc };
+const faq = doc.faq.length ? doc.faq : jazzFaqFallback();
+const page = { ...doc, faq };
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: doc.h1,
+    description: doc.description,
+    provider: { '@type': 'Organization', name: 'SEO Jazz' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
+---
+<JazzLayout title={doc.title} description={doc.description} path={doc.url} jsonLd={jsonLd}>
+  <ContentBody doc={page} mount="seojazz" cta="Получить рекомендации" btnClass="jz-btn" />
+</JazzLayout>

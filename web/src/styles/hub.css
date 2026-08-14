@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+body.hub {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Manrope, Segoe UI, sans-serif;
+  background: #0e1218;
+  color: #f4f1ea;
+}
+.hub-wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 72px 0 48px; }
+.hub h1 { font-size: clamp(32px, 5vw, 56px); margin: 0 0 12px; letter-spacing: -.04em; }
+.hub p { color: #b7b2a6; font-size: 18px; max-width: 640px; }
+.hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
+.hub-card {
+  display: block; text-decoration: none; color: inherit;
+  border-radius: 20px; padding: 28px; min-height: 280px;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .15s ease;
+}
+.hub-card:hover { transform: translateY(-4px); }
+.hub-card.b { background: linear-gradient(160deg, #12213a, #1a4387 70%, #fab800); }
+.hub-card.j { background: linear-gradient(160deg, #1b2a4a, #33415c 60%, #f5a623); }
+.hub-card.v { background: linear-gradient(160deg, #1f3a5f, #2c5282 60%, #e8842a); }
+.hub-card h2 { margin: 80px 0 8px; font-size: 26px; }
+.hub-card span { opacity: .85; }
+@media (max-width: 860px) { .hub-grid { grid-template-columns: 1fr; } }

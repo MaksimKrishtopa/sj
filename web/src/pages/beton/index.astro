@@ -1,0 +1,270 @@
+---
+import BetonLayout from '../../layouts/BetonLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import { siteHref } from '../../lib/paths';
+import { BETON_CITIES, BETON_DELIVERY, BETON_PRICES, BETON_REVIEWS, betonByUrl } from '../../lib/beton';
+
+const home = betonByUrl('/');
+const faq = home?.faq?.length
+  ? home.faq
+  : [
+      { q: 'Какой минимальный объём?', a: 'От 1 м³, доплат за малый объём нет.' },
+      { q: 'Доставят ли в день заказа?', a: 'Да, если оформить заявку до 16:00.' },
+      { q: 'Какие документы будут?', a: 'ТТН и паспорт качества ГОСТ. Юрлицам — счёт-фактура и УПД.' },
+    ];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'ООО «ПСК «Прогресс»',
+    telephone: '+7-499-111-72-62',
+    email: 'zakazi-otdel@yandex.ru',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Туполевское шоссе, 14 с3',
+      addressLocality: 'Жуковский',
+      addressCountry: 'RU',
+    },
+    openingHours: 'Mo-Su 08:00-22:00',
+    priceRange: 'от 4150 RUB',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
+---
+<BetonLayout
+  title="Купить бетон в Жуковском с доставкой — от 4 150 ₽/м³"
+  description="Бетон от завода-производителя ООО «ПСК «Прогресс» в Жуковском: марки М100–М600, от 1 м³, доставка в день заказа, паспорт ГОСТ. Тел. +7 (499) 111-72-62."
+  path="/"
+  jsonLd={jsonLd}
+>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Бетонный завод · Жуковский</div>
+        <h1>Заводской бетон с доставкой по Жуковскому</h1>
+        <p class="lead">Минимальный заказ 1 м³ · привезём в день обращения · паспорт качества ГОСТ к каждой партии</p>
+        <div class="stats">
+          <div class="stat"><b>23 года</b><span>работаем с 2003 года</span></div>
+          <div class="stat"><b>от 4 150 ₽</b><span>цена без посредников, с НДС</span></div>
+          <div class="stat"><b>бесплатно</b><span>доставка по Раменскому району</span></div>
+        </div>
+        <a class="btn" href="#calc">Рассчитать стоимость</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 640 420" role="img">
+          <rect x="40" y="210" width="220" height="140" rx="8" fill="#fab800"/>
+          <rect x="70" y="120" width="40" height="90" fill="#fff6da"/>
+          <rect x="130" y="90" width="50" height="120" fill="#fff6da"/>
+          <rect x="200" y="150" width="36" height="60" fill="#1a4387"/>
+          <circle cx="430" cy="250" r="70" fill="#fab800"/>
+          <circle cx="430" cy="250" r="38" fill="#12213a"/>
+          <rect x="390" y="160" width="80" height="40" rx="6" fill="#ffffff" opacity=".85"/>
+          <path d="M300 300h280" stroke="#ffffff" stroke-width="10" opacity=".25"/>
+          <text x="56" y="360" fill="#12213a" font-size="18" font-weight="700">БСУ Stetter · 110 м³/час</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap trust">
+      <article><h3>Завод-производитель</h3><p>Цена без посредников, с НДС</p></article>
+      <article><h3>БСУ Stetter</h3><p>Немецкое автодозирование, 110 м³/час</p></article>
+      <article><h3>Лаборатория</h3><p>Паспорт ГОСТ на каждую партию</p></article>
+      <article><h3>GPS на миксерах</h3><p>Доставка точно в срок</p></article>
+      <article><h3>Гарантия объёма</h3><p>Специалист + акт</p></article>
+    </div>
+  </section>
+
+  <section class="section alt" id="calc">
+    <div class="wrap">
+      <h2>Рассчитайте стоимость онлайн</h2>
+      <div class="calc">
+        <div class="calc-grid">
+          <label>Материал
+            <select id="bt-mat">
+              <option value="gravel">Бетон на гравии</option>
+              <option value="granite">Бетон на граните</option>
+            </select>
+          </label>
+          <label>Марка
+            <select id="bt-mark">
+              {BETON_PRICES.gravel.map((r) => <option value={r.mark} data-price={r.price}>{r.mark}</option>)}
+            </select>
+          </label>
+          <label>Объём, м³
+            <input id="bt-vol" type="number" min="1" value="8" />
+          </label>
+          <label>Доставка
+            <select id="bt-del">
+              <option value="0">Раменский район — 0</option>
+              <option value="500">до 5 км — 500 ₽/м³</option>
+              <option value="600">5–10 км — 600 ₽/м³</option>
+              <option value="700">10–15 км — 700 ₽/м³</option>
+              <option value="900">40–50 км — 900 ₽/м³</option>
+            </select>
+          </label>
+        </div>
+        <p class="calc-out" id="bt-out">Итого: 37 600 ₽</p>
+        <p>После расчёта цена держится 24 часа</p>
+        <a class="btn" href="#lead">Заказать по этой цене</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Марки и цены — выберите нужный материал</h2>
+      <div class="tabs">
+        <button class="tab active" data-tab="gravel">Бетон на гравии</button>
+        <button class="tab" data-tab="granite">Бетон на граните</button>
+      </div>
+      <div class="table-wrap" id="tab-gravel">
+        <table>
+          <thead><tr><th>Марка / Класс</th><th>Применение</th><th>Цена с НДС</th></tr></thead>
+          <tbody>
+            {BETON_PRICES.gravel.map((r) => (
+              <tr>
+                <td><a href={siteHref('beton', r.href)}>{r.mark} / {r.cls}</a></td>
+                <td>{r.use}</td>
+                <td><b>{r.price.toLocaleString('ru-RU')} ₽/м³</b></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap" id="tab-granite" hidden>
+        <table>
+          <thead><tr><th>Марка / Класс</th><th>Применение</th><th>Цена с НДС</th></tr></thead>
+          <tbody>
+            {BETON_PRICES.granite.map((r) => (
+              <tr>
+                <td><a href={siteHref('beton', r.href)}>{r.mark} / {r.cls}</a></td>
+                <td>{r.use}</td>
+                <td><b>{r.price.toLocaleString('ru-RU')} ₽/м³</b></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p><a href={siteHref('beton', '/ceny/')}>Смотреть все марки и цены →</a></p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <h2>Бесплатная доставка по Раменскому району</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Расстояние от завода</th><th>Тариф</th></tr></thead>
+          <tbody>
+            {BETON_DELIVERY.map((d) => <tr><td>{d.zone}</td><td>{d.price}</td></tr>)}
+          </tbody>
+        </table>
+      </div>
+      <p>Жуковский · Раменское · Кратово · Малаховка · Удельная · Ильинский · Лыткарино · Быково</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Дополнительные услуги завода</h2>
+      <div class="cards">
+        <a class="card" href={siteHref('beton', '/arenda-betonasosa/')}><h3>Аренда бетононасоса</h3><p>Стрелы 18–57 м. Подача на высоту и в труднодоступные зоны.</p></a>
+        <a class="card" href={siteHref('beton', '/laboratoriya/')}><h3>Лаборатория</h3><p>Протоколы гособразца — принимают суды и стройконтроль.</p></a>
+        <a class="card" href={siteHref('beton', '/dostavka/')}><h3>Доставка миксером</h3><p>Собственный автопарк 7–14 м³ с GPS.</p></a>
+        <a class="card" href={siteHref('beton', '/optom/')}><h3>Поставки оптом</h3><p>От 1 до 1000+ м³/день, ЭДО и тендеры.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <h2>4 шага от заявки до разгрузки</h2>
+      <div class="steps">
+        <article class="step"><div class="num">1</div><h3>Заявка</h3><p>За 5 минут согласуем марку, объём, адрес и время.</p></article>
+        <article class="step"><div class="num">2</div><h3>Подтверждение</h3><p>Диспетчер перезвонит за 15 минут с точной суммой.</p></article>
+        <article class="step"><div class="num">3</div><h3>Доставка</h3><p>Миксер на маршруте с GPS — видно, где машина.</p></article>
+        <article class="step"><div class="num">4</div><h3>Разгрузка</h3><p>ТТН и паспорт ГОСТ. Наличные или безнал.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Что говорят покупатели</h2>
+      <div class="reviews">
+        {BETON_REVIEWS.map((r) => (
+          <article class="review">
+            <header><span>{r.name}, {r.city}</span><span>{r.date}</span></header>
+            <p>{r.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <h2>Доставляем по городам</h2>
+      <div class="cards">
+        {BETON_CITIES.map((c) => (
+          <a class="card" href={siteHref('beton', c.href)}><h3>{c.name}</h3><p>Бетон с доставкой</p></a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <Faq items={faq} />
+    </div>
+  </section>
+
+  <section class="section alt" id="lead">
+    <div class="wrap">
+      <LeadForm title="Рассчитайте стоимость и закажите бетон" subtitle="Бесплатно · Без обязательств · Ответим за 15 минут" cta="Рассчитать стоимость и заказать" />
+    </div>
+  </section>
+</BetonLayout>
+
+<script>
+  const prices: Record<string, Record<string, number>> = {
+    gravel: { М100: 4150, М150: 4300, М200: 4700, М250: 4900, М300: 5100, М350: 5250, М400: 5450, М450: 5650 },
+    granite: { М100: 4600, М200: 5150, М300: 5550, М400: 5900, М500: 6300, М600: 6600 },
+  };
+  const mat = document.getElementById('bt-mat') as HTMLSelectElement | null;
+  const mark = document.getElementById('bt-mark') as HTMLSelectElement | null;
+  const vol = document.getElementById('bt-vol') as HTMLInputElement | null;
+  const del = document.getElementById('bt-del') as HTMLSelectElement | null;
+  const out = document.getElementById('bt-out');
+  function recalc() {
+    if (!mat || !mark || !vol || !del || !out) return;
+    const p = prices[mat.value]?.[mark.value] || 5100;
+    const v = Number(vol.value) || 1;
+    const d = Number(del.value) || 0;
+    const sum = (p + d) * v;
+    out.textContent = `Итого: ${sum.toLocaleString('ru-RU')} ₽`;
+  }
+  [mat, mark, vol, del].forEach((el) => el?.addEventListener('change', recalc));
+  vol?.addEventListener('input', recalc);
+  document.querySelectorAll('.tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      const id = (tab as HTMLElement).dataset.tab;
+      document.getElementById('tab-gravel')!.hidden = id !== 'gravel';
+      document.getElementById('tab-granite')!.hidden = id !== 'granite';
+    });
+  });
+</script>

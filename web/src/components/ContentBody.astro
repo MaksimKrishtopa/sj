@@ -1,0 +1,62 @@
+---
+import Faq from './Faq.astro';
+import LeadForm from './LeadForm.astro';
+import { siteHref } from '../lib/paths';
+import type { PageDoc } from '../lib/types';
+
+interface Props {
+  doc: PageDoc;
+  mount: string;
+  cta?: string;
+  btnClass?: string;
+}
+const { doc, mount, cta = 'Оставить заявку', btnClass = 'btn' } = Astro.props;
+const crumbs = [
+  { href: siteHref(mount), text: 'Главная' },
+  ...doc.url.split('/').filter(Boolean).map((part, i, arr) => ({
+    href: siteHref(mount, '/' + arr.slice(0, i + 1).join('/') + '/'),
+    text: part.replace(/-/g, ' '),
+  })),
+];
+---
+<div class="wrap crumbs">
+  {crumbs.map((c, i) => (
+    <>
+      {i > 0 && ' / '}
+      <a href={c.href}>{c.text}</a>
+    </>
+  ))}
+</div>
+<section class="hero">
+  <div class="wrap">
+    <h1>{doc.h1}</h1>
+    {doc.lead && <p class="lead">{doc.lead}</p>}
+    {doc.price && <p class="vg-price">{doc.price.startsWith('от') || doc.price.includes('запрос') ? doc.price : `от ${doc.price}`}</p>}
+    <p><a class={btnClass} href="#lead">{cta}</a></p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap prose" set:html={doc.html} />
+</section>
+<section class="section alt soft">
+  <div class="wrap">
+    <Faq items={doc.faq} />
+  </div>
+</section>
+{doc.links.length > 0 && (
+  <section class="section">
+    <div class="wrap">
+      <h2>Связанные страницы</h2>
+      <div class="link-grid cards g3">
+        {doc.links.slice(0, 12).map((l) => (
+          <a class="card jz-card vg-card" href={siteHref(mount, l.href)}>{l.text}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+<section class="section" id="lead">
+  <div class="wrap">
+    <LeadForm cta={cta} />
+  </div>
+</section>

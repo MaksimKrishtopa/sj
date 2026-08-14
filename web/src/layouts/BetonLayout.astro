@@ -1,0 +1,83 @@
+---
+import Seo from '../components/Seo.astro';
+import { siteHref, absHref } from '../lib/paths';
+import '../styles/beton.css';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  jsonLd?: Record<string, unknown>[];
+}
+const { title, description, path, jsonLd = [] } = Astro.props;
+const pageUrl = siteHref('beton', path);
+---
+<!doctype html>
+<html lang="ru">
+  <head>
+    <Seo title={title} description={description} url={pageUrl} jsonLd={jsonLd} />
+    <link rel="icon" href={absHref('favicon-beton.svg')} type="image/svg+xml" />
+  </head>
+  <body class="bt">
+    <header class="bt-header">
+      <div class="wrap bar">
+        <a class="logo" href={siteHref('beton')}>
+          <span class="logo-mark">П</span>
+          ПСК Прогресс
+        </a>
+        <nav class="nav" data-nav>
+          <a href={siteHref('beton', '/tovarnyy-beton-hub/')}>Каталог</a>
+          <a href={siteHref('beton', '/ceny/')}>Цены</a>
+          <a href={siteHref('beton', '/dostavka/')}>Доставка</a>
+          <a href={siteHref('beton', '/o-kompanii/')}>О заводе</a>
+          <a href={siteHref('beton', '/blog/kakoy-beton-dlya-fundamenta/')}>Блог</a>
+          <a href={siteHref('beton', '/kontakty/')}>Контакты</a>
+        </nav>
+        <div class="head-cta">
+          <div>
+            <a class="phone" href="tel:+74991117262">+7 (499) 111-72-62</a>
+            <div class="live"><i class="dot"></i> ежедневно 8:00–22:00</div>
+          </div>
+          <a class="btn" href="#lead">Заказать</a>
+          <button class="burger" data-burger aria-label="Меню">☰</button>
+        </div>
+      </div>
+    </header>
+    <slot />
+    <footer class="bt-footer">
+      <div class="wrap ft-grid">
+        <div>
+          <strong>ООО «ПСК «Прогресс»</strong>
+          <p>Бетонный завод в Жуковском. Товарный бетон М100–М600, растворы, доставка миксером.</p>
+          <p>г. Жуковский, Туполевское шоссе, 14 с3</p>
+          <p>ИНН 5003088122 · ОГРН 1105003005326</p>
+        </div>
+        <div>
+          <a href={siteHref('beton', '/m200/')}>Бетон М200</a>
+          <a href={siteHref('beton', '/m300/')}>Бетон М300</a>
+          <a href={siteHref('beton', '/peskobeton/')}>Пескобетон</a>
+          <a href={siteHref('beton', '/arenda-betonasosa/')}>Аренда насоса</a>
+        </div>
+        <div>
+          <a href={siteHref('beton', '/dostavka/')}>Доставка</a>
+          <a href={siteHref('beton', '/laboratoriya/')}>Лаборатория</a>
+          <a href={siteHref('beton', '/sertifikaty/')}>Сертификаты</a>
+          <a href={siteHref('beton', '/otzyvy/')}>Отзывы</a>
+        </div>
+        <div>
+          <a href="tel:+74991117262">+7 (499) 111-72-62</a>
+          <a href="mailto:zakazi-otdel@yandex.ru">zakazi-otdel@yandex.ru</a>
+          <a href={siteHref('beton', '/kontakty/')}>Контакты и реквизиты</a>
+        </div>
+      </div>
+      <div class="wrap copy">© 2003–2026 ООО «ПСК «Прогресс»</div>
+    </footer>
+    <div class="sticky-bar">
+      <a class="call" href="tel:+74991117262">Позвонить</a>
+      <a class="ask" href="#lead">Заявка</a>
+    </div>
+    <script>
+      import '../scripts/lead.ts';
+    </script>
+  </body>
+</html>

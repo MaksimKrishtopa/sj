@@ -1,0 +1,50 @@
+---
+import VagonLayout from '../../layouts/VagonLayout.astro';
+import ContentBody from '../../components/ContentBody.astro';
+import { loadVagonPages, VAGON_BRAND } from '../../lib/vagon';
+import type { PageDoc } from '../../lib/types';
+
+export function getStaticPaths() {
+  return loadVagonPages()
+    .filter((p) => p.url !== '/' && /^\/[\w\-./]+$/.test(p.url))
+    .map((doc) => ({
+      params: { slug: doc.url.replace(/^\/|\/$/g, '') },
+      props: { doc },
+    }));
+}
+
+const { doc } = Astro.props as { doc: PageDoc };
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': doc.kind === 'product' ? 'Product' : 'WebPage',
+    name: doc.h1,
+    description: doc.description,
+    brand: VAGON_BRAND,
+    ...(doc.price && !doc.price.includes('запрос')
+      ? {
+          offers: {
+            '@type': 'Offer',
+            priceCurrency: 'RUB',
+            price: doc.price.replace(/[^\d]/g, ''),
+            availability: 'https://schema.org/InStock',
+          },
+        }
+      : {}),
+  },
+  ...(doc.faq.length
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: doc.faq.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      }]
+    : []),
+];
+---
+<VagonLayout title={doc.title} description={doc.description} path={doc.url} jsonLd={jsonLd}>
+  <ContentBody doc={doc} mount="vagon-dom" cta="Рассчитать стоимость" btnClass="vg-btn" />
+</VagonLayout>

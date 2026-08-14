@@ -1,0 +1,15 @@
+web/node_modules/
+web/dist/
+web/.astro/
+**/_ARCHIVE-ramenskoe/
+**/_BACKUP-geo-clone/
+.cursor/
+agent-transcripts/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.xlsx
+*.xmind
+*.csv

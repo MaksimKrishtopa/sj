@@ -1,0 +1,47 @@
+---
+import JazzLayout from '../../layouts/JazzLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { JAZZ_CASES } from '../../lib/seojazz';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Кейсы SEO Jazz',
+    description: 'Реальные результаты клиентов SEO Jazz: заявки, трафик и видимость в поиске и нейросетях.',
+  },
+];
+---
+<JazzLayout
+  title="Кейсы SEO Jazz — заявки, трафик и видимость в ИИ"
+  description="Кейсы SEO Jazz: стоматология, стройка, маркетплейсы, GEO/AI. Метрики в заявках и выручке, не в обещании ТОП-1."
+  path="/kejsy/"
+  jsonLd={jsonLd}
+>
+  <section class="jz-hero">
+    <div class="wrap">
+      <div class="jz-kicker">Доказательства</div>
+      <h1>Кейсы: точка А → точка B</h1>
+      <p>Только подтверждённые метрики с seojazz.ru, Telegram и отраслевых публикаций. Считаем заявки и видимость, не «места в ТОП» как самоцель.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="jz-grid g4">
+        {JAZZ_CASES.map((c) => (
+          <article class="jz-card">
+            <h3>{c.name}</h3>
+            <p>{c.niche}</p>
+            <b>{c.metric}</b>
+            <p>{c.extra}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="section soft" id="lead">
+    <div class="wrap">
+      <LeadForm title="Хочу такие результаты" subtitle="Разберём нишу и покажем, откуда взять заявки" cta="Получить рекомендации" />
+    </div>
+  </section>
+</JazzLayout>

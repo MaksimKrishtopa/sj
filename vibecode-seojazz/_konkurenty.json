@@ -1,0 +1,1792 @@
+{
+  "/prodvizhenie-po-pozicijam/": {
+    "k": [
+      "https://seointellect.ru/prodvizhenie-saytov/prodvizhenie-po-pozitsiyam/",
+      "https://head-promo.ru/seo-prodvizheniya-po-pozicziyam/",
+      "https://optimism.ru/services/seo-optimization/positions/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-po-trafiku/": {
+    "k": [
+      "https://rookee.ru/vitrina-uslug/seo/prodvizhenie-po-trafiku/",
+      "https://www.rush-agency.ru/seo-prodvizhenie/po-trafiku/",
+      "https://seointellect.ru/prodvizhenie-saytov/prodvizhenie-po-trafiku/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-s-oplatoj-za-lidy/": {
+    "k": [
+      "https://www.demis.ru/seo-prodvijenie-saytov/po-lidam/",
+      "https://kokoc.com/seo-prodvijenie-saytov/oplata-za-lid/",
+      "https://kinetica.su/prodvizheniye-saita-po-lidam/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-za-rezultat/": {
+    "k": [
+      "https://seaccelerator.ru/tariff/pay-for-result",
+      "https://kokoc.com/seo-prodvijenie-saytov/s-oplatoj-po-faktu/",
+      "https://web-c.ru/poiskovoe-prodvizhenie/prodvizhenie-s-oplatoy-za-obrazhenie/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-v-yandex/": {
+    "k": [
+      "https://mosseo.ru/poiskovye-sistemy/yandex/optimizaciya-pod-yandex/"
+    ],
+    "t": "инфо-выдача (reg.ru, timeweb, habr)"
+  },
+  "/prodvizhenie-v-google/": {
+    "k": [
+      "https://trinet.ru/services/prodvizhenie-saytov-v-google/"
+    ],
+    "t": "инфо-выдача (insales, rbc, seonews)"
+  },
+  "/vyvod-sajta-v-top-10/": {
+    "k": [
+      "https://racurs.agency/services/seo-prodvizhenie-po-pozicijam-v-top-3-10/",
+      "https://seaccelerator.ru/"
+    ],
+    "t": "смешанная (rbc, habr, reg.ru)"
+  },
+  "/regionalnoe-prodvizhenie/": {
+    "k": [
+      "https://d-element.ru/about/blog/regionalnoe-prodvizhenie-sayta-poddomeny-ili-podpapki/",
+      "https://www.uplab.ru/blog/how-to-promote-websites-in-the-regions/"
+    ],
+    "t": "инфо-выдача (ashmanov, klerk, habr)"
+  },
+  "/prodvizhenie-molodyh-sajtov/": {
+    "k": [
+      "https://ingate.ru/uslugi/seo/prodvizhenie-molodogo-sajta/",
+      "https://pixelplus.ru/prodvizhenie-sajtov/molodyh/",
+      "https://racurs.agency/services/prodvizhenie-molodogo-saita/"
+    ],
+    "t": "смешанная"
+  },
+  "/uskorennoe-prodvizhenie/": {
+    "k": [
+      "https://lead.media/prodvizhenie-sajtov-bystroe/",
+      "https://seo-dius.ru/bystroe-seo/",
+      "https://seaccelerator.ru/"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-pod-kljuch/": {
+    "k": [
+      "https://www.demis.ru/seo-prodvijenie-saytov/",
+      "https://ingate.ru/uslugi/seo/",
+      "https://www.rush-agency.ru/seo-prodvizhenie/pod-klyuch/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-soprovozhdenie-sajta/": {
+    "k": [
+      "https://www.demis.ru/services/seo-support/",
+      "https://medianation.ru/services/seo/site-support/",
+      "https://soldimarketing.ru/seo-prodvizhenie/seo-soprovozhdenie/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-kopirajting/": {
+    "k": [
+      "https://kwork.ru/land/seo-kopirayt"
+    ],
+    "t": "инфо-выдача (etxt, vtb, habr)"
+  },
+  "/mikrorazmetka-schema/": {
+    "k": [
+      "https://intelsib.ru/article/mikrorazmetka-schema/",
+      "https://kokoc.com/blog/schema-org-polnoe-rukovodstvo-po-semanticheskoy-razmetke/"
+    ],
+    "t": "инфо-выдача (topvisor, pr-cy)"
+  },
+  "/tehnicheskaja-optimizacija/": {
+    "k": [
+      "https://www.directline.pro/connect/p/tekhnicheskaya-optimizatsiya-sayta/",
+      "https://ingate.ru/blog/tekhnicheskaya-optimizaciya-sajta/",
+      "https://kokoc.com/blog/tekhnicheskaya-optimizaciya-sajta/"
+    ],
+    "t": "смешанная"
+  },
+  "/povedencheskie-faktory/": {
+    "k": [
+      "https://callibri.ru/blog/kak-ulucshit-povedencheskie-factory-saita-bez-nakrutok"
+    ],
+    "t": "инфо-выдача (skillbox, mts, rbc)"
+  },
+  "/lokalnoe-seo/": {
+    "k": [
+      "https://1ps.ru/blog/dirs/2025/lokalnoe-seo-v-yandekse-strategii-effektivnogo-prodvizheniya-v-regionax-v-2025-godu/",
+      "https://agency.sape.ru/articles/lokalnoe-prodvizhenie/"
+    ],
+    "t": "инфо-выдача (habr, texterra, rbc)"
+  },
+  "/optimizacija-core-web-vitals/": {
+    "k": [
+      "https://brainbox-marketing.ru/blog/core-web-vitals-kak-optimizirovat-sajt-pod-trebovaniya-google-i-yandeksa/",
+      "https://victoryagency.ru/blog/razrabotka-sayta/core-web-vitals-lcp-fid-cls-kak-uluchshat"
+    ],
+    "t": "инфо-выдача (habr, pr-cy, sky.pro)"
+  },
+  "/vozvrat-pozicij/": {
+    "k": [
+      "https://searchindustrial.ru/blog/seo/kak-vosstanovit-pozitsii-posle-padeniya-trafika-podrobnyy-plan-deystviy-dlya-vladeltsev-saytov/",
+      "https://www.directline.pro/blog/sayt-rezko-upal-v-yandekse-kak-vernut-pozitsii/",
+      "https://brainbox-marketing.ru/blog/kak-vosstanovit-poziczii-sajta-posle-padeniya-15-shagov/"
+    ],
+    "t": "смешанная"
+  },
+  "/snjatie-filtrov/": {
+    "k": [
+      "https://medianation.ru/services/seo/sanctions/",
+      "https://fouro.ru/uslugi/vyvod-sayta-iz-pod-filtrov-i-snyatie-sanktsiy/",
+      "https://pixelplus.ru/prodvizhenie-sajtov/razovye-uslugi/snyatie-sanktsij/"
+    ],
+    "t": "коммерческая"
+  },
+  "/perenos-sajta/": {
+    "k": [
+      "https://t-f-a.agency/blog/kak-perenesti-sajt-na-novyj-domen-bez-poteri-pozicij-v-poiskovoj-vydache-polnoe-rukovodstvo/",
+      "https://serptop.ru/blog/migraciya-sayta-bez-poteri-trafika-kak-pravilno-perenesti-sayt-i-sohranit-pozicii/",
+      "https://www.rush-analytics.ru/blog/kak-perenesti-sajt-na-drugoj-hosting-ili-domen-bez-poter-dlya-trafika-i-poziczii"
+    ],
+    "t": "инфо-выдача (workspace, cossa)"
+  },
+  "/mobilnaja-optimizacija/": {
+    "k": [
+      "https://www.completo.ru/blog/articles/mobilnaya-seo-optimizatsiya-kak-adaptirovat-sayt-pod-sovremennye-ustroystva/",
+      "https://searchindustrial.ru/blog/seo/pochemu-mobilnoe-seo-trebuet-osobogo-podkhoda/"
+    ],
+    "t": "инфо-выдача (mts, rbc)"
+  },
+  "/seo-audit-sajta/": {
+    "k": [
+      "https://roswebconsult.ru/audit-sajta.html",
+      "https://avigroup.pro/moscow/seo-audit-sajta/",
+      "https://www.demis.ru/services/seo-audit-sajta/"
+    ],
+    "t": "коммерческая"
+  },
+  "/tehnicheskij-audit-sajta/": {
+    "k": [
+      "https://www.demis.ru/services/tekhnicheskiy-audit-sayta/",
+      "https://pixelplus.ru/prodvizhenie-sajtov/audit-sajta/tehnicheskij/",
+      "https://www.seowizard.ru/services/audit/tech/"
+    ],
+    "t": "коммерческая"
+  },
+  "/kommercheskij-audit-sajta/": {
+    "k": [
+      "https://soldimarketing.ru/audit-saytov/kommercheskiy-audit-sayta/",
+      "https://arcticlab.ru/audity/kommercheskij-audit-sajta/",
+      "https://kokoc.com/audit/kommercheskiy/"
+    ],
+    "t": "коммерческая"
+  },
+  "/uzabiliti-audit-sajta/": {
+    "k": [
+      "https://www.uplab.ru/blog/usability-audit-of-the-website/",
+      "https://mindrepublic.ru/articles/yuzabiliti-audit-sajta/",
+      "https://roswebconsult.ru/audit-sajta.html"
+    ],
+    "t": "смешанная"
+  },
+  "/audit-konkurentov/": {
+    "k": [
+      "https://kokoc.com/blog/seo-analiz-sajtov-konkurentov/"
+    ],
+    "t": "инфо-выдача (интент — сервисы: skillbox, unisender, adlook)"
+  },
+  "/vneshnjaja-optimizacija-ssylki/": {
+    "k": [
+      "https://lead-bro.ru/seo-prodvizhenie/",
+      "https://on-target.pro/seo-prodvizhenie-sayta/",
+      "https://rookee.ru/vitrina-uslug/seo/kompleksnoe-prodvizhenie-sajta/"
+    ],
+    "t": "смешанная (нет чистой посадочной, общие SEO)"
+  },
+  "/zakupka-ssylok/": {
+    "k": [
+      "https://rookee.ru/vitrina-uslug/avtomaticheskaya-zakupka-ssylok"
+    ],
+    "t": "инфо/биржи (timeweb, kwork, calltouch)"
+  },
+  "/statejnoe-prodvizhenie/": {
+    "k": [
+      "https://promopult.ru/technology/seoarticles",
+      "https://www.demis.ru/articles/stateynoe-prodvizhenie-kak-prodvigat-sayt-statyami/",
+      "https://1ps.ru/cost/posting/"
+    ],
+    "t": "смешанная (sape, web-canape инфо)"
+  },
+  "/autrich-ssylki/": {
+    "k": [
+      "https://rush-analytics.ru/blog/outreach-kak-metod-linkbuildinga",
+      "https://rookee.ru/glossary/autrich/"
+    ],
+    "t": "инфо-выдача (unisender, romi, vc, promopult)"
+  },
+  "/kraud-marketing/": {
+    "k": [
+      "https://advego.com/order/zakaz-kraud-marketing/",
+      "https://1ps.ru/cost/crowd/",
+      "https://www.cyber-pulse.com/zakazat-kraud-marketing"
+    ],
+    "t": "коммерческая (биржи/сервисы)"
+  },
+  "/geo-prodvizhenie/": {
+    "k": [
+      "https://www.it-agency.ru/services/geo/",
+      "https://www.demis.ru/articles/prodvizhenie-sayta-v-neyrosetyakh-trebovaniya-ii-k-optimizatsii/"
+    ],
+    "t": "смешанная (skillbox, rbc, adindex инфо)"
+  },
+  "/prodvizhenie-v-otvety-chatgpt/": {
+    "k": [
+      "https://www.web-canape.ru/business/prodvizhenie-v-chatgpt-kak-b2b-kompaniyam-popast-v-otvety-nejroseti/",
+      "https://rookee.ru/blog/kak-prodvigat-biznes-v-poiske-chatgpt-polnoe-rukovodstvo-dlya-kompaniy-v-2026-godu/",
+      "https://head-promo.ru/blog/geo-prodvizhenie-v-chatgpt/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-v-otvety-claude/": {
+    "k": [
+      "https://pixelplus.ru/ai-seo/claude/",
+      "https://primo.agency/prodvizhenie-v-nejrosetyah/claude",
+      "https://www.rush-agency.ru/prodvizhenie-sajta-v-ai/claude/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-v-otvety-gemini/": {
+    "k": [
+      "https://primo.agency/prodvizhenie-v-nejrosetyah/gemini",
+      "https://lead.media/uslugi/geo-prodvizhenie/gemini/",
+      "https://i-seo.su/services/ai-optimization/gemini.html"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-v-otvety-perplexity/": {
+    "k": [
+      "https://lead.media/uslugi/geo-prodvizhenie/perplexity/",
+      "https://primo.agency/prodvizhenie-v-nejrosetyah/perplexity"
+    ],
+    "t": "смешанная (pr-cy, habr инфо)"
+  },
+  "/prodvizhenie-v-otvety-deepseek/": {
+    "k": [
+      "https://www.rush-agency.ru/prodvizhenie-sajta-v-ai/deepseek/",
+      "https://primo.agency/prodvizhenie-v-nejrosetyah/deepseek",
+      "https://www.directline.pro/prodvizhenie-sajtov-v-deepseek/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-v-otvety-gigachat/": {
+    "k": [
+      "https://primo.agency/prodvizhenie-v-nejrosetyah/gigachat",
+      "https://pixelplus.ru/ai-seo/gigachat/",
+      "https://www.rush-agency.ru/prodvizhenie-sajta-v-ai/gigachat-sber/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-v-otvety-jandeksgpt-v-jandeks-alisu/": {
+    "k": [
+      "https://primo.agency/prodvizhenie-v-nejrosetyah/yandex-alisa",
+      "https://lead.media/uslugi/geo-prodvizhenie/yandex-nejro/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-v-otvety-ii/": {
+    "k": [
+      "https://www.utlab.ru/blog/geo-i-aeo/",
+      "https://www.demis.ru/articles/aeo-prodvizhenie-i-optimizatsiya-pod-otvety-ii/"
+    ],
+    "t": "инфо-выдача (tbank, vc, skillbox)"
+  },
+  "/ai-seo-prodvizhenie/": {
+    "k": [
+      "https://racurs.agency/services/ai-seo-i-geo-optimizaciya/",
+      "https://pixelplus.ru/prodvizhenie-sajtov/s-pomoshyu-iskusstvennogo-intellekta/"
+    ],
+    "t": "смешанная (bitrix24, demis, timeweb инфо)"
+  },
+  "/aeo-prodvizhenie/": {
+    "k": [
+      "https://cmsmagazine.ru/journal/items-geo-aeo-prodvizhenie-sajtov/",
+      "https://www.utlab.ru/blog/geo-i-aeo/",
+      "https://www.demis.ru/articles/aeo-prodvizhenie-i-optimizatsiya-pod-otvety-ii/"
+    ],
+    "t": "инфо-выдача (habr, rbc, tbank)"
+  },
+  "/prodvizhenie-v-google-ai-overview/": {
+    "k": [
+      "https://www.rush-agency.ru/prodvizhenie-sajta-v-ai/google-ai-overviews/",
+      "https://remarka.agency/journal/google-ai-overviews-kak-popast",
+      "https://www.sape.ru/publications/kak-popast-v-google-ai-overviews/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-v-yandex-neuro/": {
+    "k": [
+      "https://lead.media/uslugi/geo-prodvizhenie/yandex-nejro/",
+      "https://exiterra.ru/blog/prodvizhenie-sajta/prodvizhenie-v-yandeks-neyro-kak-popast-v-otvety-umnogo-poiska/",
+      "https://webolution.ru/blog/kak-popast-v-vydachu-yandeks-neyro/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-v-otvety-grok/": {
+    "k": [
+      "https://pixelplus.ru/ai-seo/grok/",
+      "https://smirnov.marketing/prodvizhenie-v-grok",
+      "https://yandovskiy-seo.ru/kak-prodvigatsya-v-grok/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-v-otvety-copilot/": {
+    "k": [
+      "https://spat.by/uslugi/ai-promo/copilot",
+      "https://xn----8sblcaefj9bcnllc6n.xn--p1ai/geo-prodvizhenie/prodvizhenie-v-copilot"
+    ],
+    "t": "смешанная (microsoft.com инфо)"
+  },
+  "/llm-optimizacija/": {
+    "k": [
+      "https://d-element.ru/about/blog/tekhnicheskiy-gayd-kak-prodvigat-sayt-cherez-neyroseti/",
+      "https://serpzilla.com/blog/llm-seo-optimization/",
+      "https://vc.ru/id2497171/3014002-agentstva-po-llm-optimizacii-sajta"
+    ],
+    "t": "инфо-выдача (habr, ahrefs)"
+  },
+  "/seo-prodvizhenie-po-cms/": {
+    "k": [
+      "https://pixelplus.ru/prodvizhenie-sajtov/cms/",
+      "https://prodvigatory.com/uslugi/seo-cms/",
+      "https://xn----8sblcaefj9bcnllc6n.xn--p1ai/seo-optimization-website/cms"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-prodvizhenie-wordpress/": {
+    "k": [
+      "https://lz.media/seo/prodvizhenie-sajtov-na-wordpress"
+    ],
+    "t": "инфо-выдача (unisender, wordpress.com, netology)"
+  },
+  "/seo-prodvizhenie-bitrix/": {
+    "k": [
+      "https://team-b.ru/blog/seo-prodvizhenie-sayta-na-bitriks-poshagovaya-instruktsiya/",
+      "https://www.rush-agency.ru/seo-prodvizhenie/bitrix-1c/",
+      "https://www.web-canape.ru/prodvizhenie-sajtov/prodvizhenie-sajta-na-bitriks/"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-prodvizhenie-tilda/": {
+    "k": [
+      "https://www.demis.ru/articles/seo-na-tilde-kak-nastroit-dlya-prodvizheniya-sayt-v-poiske/",
+      "https://alt-agency.ru/media/tpost/g7ac211z41-seo-na-tilde-kak-popast-v-top-poiska-pos",
+      "https://www.sape.ru/publications/seo-prodvizhenie-tilda/"
+    ],
+    "t": "инфо-выдача (tilda help/education)"
+  },
+  "/seo-prodvizhenie-opencart/": {
+    "k": [
+      "https://team-b.ru/blog/prodvizhenie-saytov-na-opencart-polnyy-seo-gayd/",
+      "https://www.web-canape.ru/prodvizhenie-sajtov/seo-na-opencart/",
+      "https://lead.media/prodvizhenie-sajtov-na-opencart/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-modx/": {
+    "k": [
+      "https://team-b.ru/blog/prodvizhenie-saytov-na-modx-polnyy-seo-gayd/",
+      "https://seo-dius.ru/seo-prodvizhenie-modx/",
+      "https://runita.ru/services/seo-prodvizhenie-sayta-na-modx/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-joomla/": {
+    "k": [
+      "https://team-b.ru/blog/prodvizhenie-saytov-na-joomla-polnyy-seo-gayd/",
+      "https://seokey.ru/seo-prodvizhenie-joomla",
+      "https://lead.media/prodvizhenie-sajtov-na-joomla/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-drupal/": {
+    "k": [
+      "https://www.web-canape.ru/prodvizhenie-sajtov/seo-na-drupal/",
+      "https://yudena.agency/services/seo-prodvizhenie/drupal",
+      "https://seo-dius.ru/seo-prodvizhenie-sajta-na-drupal/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-insales/": {
+    "k": [
+      "https://www.web-canape.ru/prodvizhenie-sajtov/seo/prodvizhenie-sajtov-na-insales/",
+      "https://head-promo.ru/seo-prodvizhenie-sajtov-na-insales/",
+      "https://grechkopv.ru/seo-cms/insales/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-magento/": {
+    "k": [
+      "https://wa-agency.ru/services/seo/prodvizhenie-sajta-na-magento/",
+      "https://ideadigital.agency/ru/blog/seo-prodvizhenie-saytov-na-magento/",
+      "https://oparinseo.ru/services/service/prodvizhenie-na-cms-Magento/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-webflow/": {
+    "k": [
+      "https://yudena.agency/services/seo-prodvizhenie/webflow",
+      "https://inoco.ru/services/seo-prodvizhenie/seo-nastroyka-na-konstruktore/nastroyka-seo-na-sayte-webflow/",
+      "https://xn----8sblcaefj9bcnllc6n.xn--p1ai/seo-optimization-website/webflow"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-prodvizhenie-wix/": {
+    "k": [
+      "https://nastart-web.ru/uslugi/prodvizhenie-saytov/wix_seo/",
+      "https://adwebs.ru/services/pr/cms/wix/",
+      "https://smirnov.marketing/seo-prodvizhenie-saytov-na-wix"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-prodvizhenie-shop-script/": {
+    "k": [
+      "https://yudena.agency/services/seo-prodvizhenie/shop-script",
+      "https://easy-it.ru/seo/webasyst/",
+      "https://it-gradient.ru/seo-prodvizhenie/seo-na-shop-script/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-umi/": {
+    "k": [
+      "https://a25.ru/uslugi/seo/seo-umicms/",
+      "https://apanshin.ru/seo/prodvizhenie-sajtov-na-umi-cms/",
+      "https://seo-dius.ru/seo-prodvizhenie-sajta-na-umi/"
+    ],
+    "t": "коммерческая"
+  },
+  "/seo-prodvizhenie-bitrix24/": {
+    "k": [
+      "https://adwebs.ru/services/pr/cms/bitrix24/",
+      "https://webtronics.ru/prodvizhenie-sajta-na-bitriks-24",
+      "https://xlogic.ru/services/support/seo/"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-prodvizhenie-samopisnyh-sajtov/": {
+    "k": [
+      "https://maximusmedia.pro/seo-prodvizhenie-samopisnyh-sajtov/",
+      "https://izecom.ru/projects/articles/seo-samopisnogo-sayta/",
+      "https://siteclinic.ru/blog/raznoe/razrabotka-i-prodvizhenie-sajta-na-samopise/"
+    ],
+    "t": "смешанная"
+  },
+  "/seo-po-tipu-sajta/": {
+    "k": [
+      "https://www.oweb-solutions.ru/prodvizhenie-po-tipu-sayta/",
+      "https://head-promo.ru/seo-optimizaciya-sajtov/",
+      "https://pixelplus.ru/prodvizhenie-sajtov/start/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-internet-magazinov/": {
+    "k": [
+      "https://seaccelerator.ru/blog/seo-prodvizhenie-internet-magazina"
+    ],
+    "t": "инфо-выдача (tbank, vtb, unisender)"
+  },
+  "/prodvizhenie-lendingov/": {
+    "k": [
+      "https://yak-studio.ru/blog/seo-prodvizhenie-lendinga",
+      "https://serptop.ru/blog/prodvizhenie-lendinga-kak-prodvigat-lending-peydzh-v-internete-i-poluchat-zayavki/",
+      "https://1ps.ru/blog/business/2025/seo-prodvizhenie-dlya-lendingov-v-2025-godu-dostigaem-topa-vyidachi/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-korporativnyh-sajtov/": {
+    "k": [
+      "https://kokoc.com/otraslevye-resheniya/seo-prodvizhenie-korporativnyh-sajtov/",
+      "https://lead.media/prodvizhenie-korporativnyh-sajtov/",
+      "https://cinar.ru/prodvizhenie-korporativnogo-sayta"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-sajtov-katalogov/": {
+    "k": [
+      "https://lead.media/prodvizhenie-sajta-kataloga/",
+      "https://grampus-studio.ru/seo-prodvizhenie-sajtov-katalogov/",
+      "https://webtaktika.ru/uslugi/seo-prodvizhenie-saytov/katalog/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-sajtov-uslug/": {
+    "k": [
+      "https://seaccelerator.ru/order-promotion",
+      "https://www.advertpro.ru/",
+      "https://avigroup.pro/moscow/"
+    ],
+    "t": "смешанная (общие SEO)"
+  },
+  "/prodvizhenie-sajtov-vizitok/": {
+    "k": [
+      "https://www.demis.ru/services/otraslevaya-ekspertiza/prodvizhenie-saytov-vizitok/",
+      "https://moab.pro/services/sayt-vizitka/",
+      "https://www.alkosto.ru/seo/prodvizhenie-sajta-vizitki/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-informacionnyh-sajtov/": {
+    "k": [
+      "https://www.demis.ru/articles/prodvizhenie-informatsionnogo-sayta-podrobnaya-instruktsiya/",
+      "https://d-element.ru/services/seo-info-site/",
+      "https://www.rush-agency.ru/seo-prodvizhenie/informacionniy-sajt/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-marketplejsov/": {
+    "k": [
+      "https://allo.tochka.com/prodvizhenie-na-marketplejsah"
+    ],
+    "t": "инфо-выдача (интент — селлеры WB/Ozon: skillbox, elama, tbank)"
+  },
+  "/prodvizhenie-agregatorov/": {
+    "k": [
+      "https://soldimarketing.ru/directions/sayt-agregator/",
+      "https://www.web-canape.ru/prodvizhenie-sajtov/prodvizhenie-agregatorov/",
+      "https://grampus-studio.ru/seo-prodvizhenie-agregatorov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-b2b-saitov/": {
+    "k": [
+      "https://lead.media/prodvizhenie-sajtov-b2b/",
+      "https://www.web-canape.ru/prodvizhenie-sajtov/seo/prodvizhenie-b2b-sajtov/"
+    ],
+    "t": "смешанная (tbank, kontur, ashmanov)"
+  },
+  "/prodvizhenie-odnostranichnikov/": {
+    "k": [
+      "https://seopapa.com/seo-prodvizhenie-odnostranichnika"
+    ],
+    "t": "инфо-выдача (tochka, timeweb, 1ps)"
+  },
+  "/prodvizhenie-blogov-media/": {
+    "k": [
+      "https://logicloud.ru/blog/seo-prodvizhenie-bloga-kak-optimizirovat-blog-sayta/",
+      "https://ryba.team/b2b/seo-blog-promotion",
+      "https://wbooster.ru/blog/seo/seo-dlya-blogov-tonkosti-prodvizheniya/"
+    ],
+    "t": "смешанная (ashmanov, texterra)"
+  },
+  "/prodvizhenie-forumov/": {
+    "k": [
+      "https://optimism.ru/blog/seo-prodvizhenie-foruma-i-sajta-soobshhestva-zhivoe-rukovodstvo-s-realnymi-primerami/",
+      "https://seo.ru/blog/prodvijenie-foruma/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-foruma/"
+    ],
+    "t": "инфо-выдача"
+  },
+  "/prodvizhenie-dosok-obyavlenij/": {
+    "k": [
+      "https://rookee.ru/blog/prodvijenie-sajta-cherz-doski-obyavlenij/",
+      "https://www.rush-agency.ru/seo-prodvizhenie/doski-obyavlenij/"
+    ],
+    "t": "смешанная (unisender, vc, habr)"
+  },
+  "/prodvizhenie-saas-sajtov/": {
+    "k": [
+      "https://pmd-agency.ru/seo/saas/",
+      "https://kalinin.pro/blog/articles/seo-dlya-saas-kak-prodvigat-vash-servis/",
+      "https://hightime.agency/saas-growth"
+    ],
+    "t": "смешанная (rbc, yagla, rush)"
+  },
+  "/seo-po-otraslyam/": {
+    "k": [
+      "https://www.advertpro.ru/otraslevye-resheniya/",
+      "https://soldimarketing.ru/directions/",
+      "https://3put.ru/services/seo-promotion/industry/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-medicinskih-sajtov/": {
+    "k": [
+      "https://www.ashmanov.com/seo-prodvizhenie/prodvizhenie-medicinskih-saitov/",
+      "https://www.demis.ru/services/otraslevaya-ekspertiza/prodvizhenie-medicinskih-sajtov/",
+      "https://seointellect.ru/media/gayd-po-seo-prodvizheniyu-meditsinskikh-saytov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-stomatologii/": {
+    "k": [
+      "https://doctorpromo.ru/services/prodvizhenie-meditsinskikh-saytov/seo-stomatologii/",
+      "https://blog.promopult.ru/seo/poiskovoe-prodvizhenie-seo-sajta-stomatologi.html",
+      "https://sbertarget.ru/blog/target/tpost/mfgvzkhcz1-prodvizhenie-stomatologicheskoi-kliniki"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-medcentrov/": {
+    "k": [
+      "https://trinet.ru/services/seo-prodvizhenie-saytov/medicinskih-klinik/",
+      "https://www.demis.ru/services/otraslevaya-ekspertiza/prodvizhenie-medicinskih-sajtov/",
+      "https://digitalgeeks.ru/seo/seo-for-medicine/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-ortopedicheskih-klinik/": {
+    "k": [
+      "https://domodigital.ru/services/seo-dlya-klinik-ortopedii-i-stomatologii-strategii-prodvizheniya-meditsinskih-uslug",
+      "https://almond-medical.ru/blog/kak-prodvigat-czentr-ortopedii-i-travmatologii-v-rossii/",
+      "https://forel-agency.ru/seo-prodvizhenie-sajtov-ortopedicheskogo-salona/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-kosmetologii/": {
+    "k": [
+      "https://www.altera-media.com/optimization/meditsina/kosmetologicheskie-kliniki/",
+      "https://radema.ru/services/seo-prodvizhenie-dlya-kosmetologii/",
+      "https://seopapa.com/prodvizhenie-sayta-kosmetologii"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-plasticheskoj-hirurgii/": {
+    "k": [
+      "https://www.altera-media.com/optimization/meditsina/plasticheskaya-khirurgiya/",
+      "https://doctorpromo.ru/services/prodvizhenie-meditsinskikh-saytov/plasticheskaya-khirurgiya/",
+      "https://berlova.ru/services/prodvizhenie-kliniki-plasticheskoj-hirurgii/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-narkologii/": {
+    "k": [
+      "https://digitalriff.ru/services/marketing-i-prodvizhenie-narkologii/",
+      "https://mihaylov.digital/prodvizhenie-sajtov-narkologicheskoj-kliniki/"
+    ],
+    "t": "смешанная (vc, workspace кейсы)"
+  },
+  "/prodvizhenie-ginekologii/": {
+    "k": [
+      "https://cinar.ru/ginekologiya",
+      "https://digitalriff.ru/services/prodvizhenie-ginekologicheskoy-kliniki/",
+      "https://b2b.engineering/prodvizhenie-saytov/prodvizhenie-sayta-dlya-ginekologii/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-oftalmologii/": {
+    "k": [
+      "https://up-advert.ru/cases/prodvizheniye-oftalmologicheskoy-kliniki",
+      "https://clinicpromo.ru/cases/prodvizheniye-oftalmologicheskoy-kliniki",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-oftalmologicheskoy-kliniki/"
+    ],
+    "t": "смешанная (кейсы)"
+  },
+  "/prodvizhenie-veterinarnyh-klinik/": {
+    "k": [
+      "https://doctorpromo.ru/services/prodvizhenie-meditsinskikh-saytov/seo-veterinariya/",
+      "https://ddsi.ru/blog/kak-prodvinut-sajt-vetkliniki/"
+    ],
+    "t": "смешанная (habr, reg.ru инфо)"
+  },
+  "/prodvizhenie-laboratorij/": {
+    "k": [
+      "https://ra-tgr.ru/seo-prodvizhenie-sajtov-medicinskoj-laboratorii/",
+      "https://cometa.agency/services/prodvizhenie-meditsinskoy-laboratorii/",
+      "https://medicina.hotheads.su/seo-prodvizhenie-sajta-laboratorii"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-psihologov/": {
+    "k": [
+      "https://seoland.ru/prodvijenie-saitov/prodvizhenie-sayta-psikhologa/"
+    ],
+    "t": "инфо-выдача (niidpo, b17, tochka, vc)"
+  },
+  "/prodvizhenie-urologii/": {
+    "k": [
+      "https://forel-agency.ru/seo-prodvizhenie-sajtov-urologicheskogo-czentra/",
+      "https://medicmarketing.ru/prodvizhenie-urologii/",
+      "https://perfo-agency.ru/seo-prodvizhenie-sajta-urologicheskij-czentr/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-dermatologii/": {
+    "k": [
+      "https://onegin-expert.ru/seo-dlya-dermatologij",
+      "https://dmitry-bodrov.ru/blog/prodvizhenie-dermatologii",
+      "https://almond-medical.ru/blog/kak-prodvigat-kliniku-dermatologii-v-rossii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-flebologii/": {
+    "k": [
+      "https://rushweb.ru/uslugi/seo/flebologiya-marketing-flebologicheskih-uslug/",
+      "https://berlova.ru/services/seo-prodvizhenie-kliniki-flebologii-privlechenie-paczientov-iz-poiska-ot-agentstva-apis/",
+      "https://polozov-studio.ru/seo-prodvizhenie-kliniki-flebologii-lechenie-varikoza.html"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-eko-klinik/": {
+    "k": [
+      "https://digitalriff.ru/services/kompleksnyj-marketing-klinik-akusherstva-i-eko/",
+      "https://medsprint.ru/blog/prodvizhenie-klinik-eko-v-2026-godu"
+    ],
+    "t": "смешанная (кейсы)"
+  },
+  "/prodvizhenie-reabilitacionnyh-centrov/": {
+    "k": [
+      "https://berlova.ru/services/prodvizhenie-reabilitatsionnogo-tsentra/",
+      "https://domodigital.ru/services/effektivnoe-prodvizhenie-reabilitatsionnyh-uslug-cherez-internet-dlya-uvelicheniya-potoka-patsientov",
+      "https://almond-medical.ru/blog/kak-prodvigat-reabilitaczionnyj-czentr-v-rossii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-centrov-mrt/": {
+    "k": [
+      "https://onegin-expert.ru/seo-dlya-czentrov-mrtkt",
+      "https://dmitry-bodrov.ru/blog/prodvizhenie-kt-i-mrt-centra",
+      "https://sova-media.ru/keys/prodvizhenie-centra-mrt-i-kt-diagnostiki-1"
+    ],
+    "t": "смешанная (кейсы)"
+  },
+  "/prodvizhenie-kardiologii/": {
+    "k": [
+      "https://seohead.pro/blog/seo-prodvizhenie-sajta-kardiologicheskoj-kliniki/",
+      "https://rushweb.ru/uslugi/seo/kardiologiya-prodvizhenie-kardiologicheskih-czentrov/",
+      "https://avigroup.pro/portfolio/seo-prodvizhenie-mediczinskogo-sajta-mezhdunarodnoj-kliniki-kardioangiologii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-endokrinologii/": {
+    "k": [
+      "https://onegin-expert.ru/seo-dlya-endokrinologicheskix-klinik",
+      "https://dmitry-bodrov.ru/blog/prodvizhenie-endokrinologii",
+      "https://xn--80ajjisqj.xn--p1ai/prodvizhenie-czentrov-endokrinologii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-implantacii-zubov/": {
+    "k": [
+      "https://subbota-inc.ru/nishi/implantologiya/",
+      "https://dmitry-bodrov.ru/blog/reklama-implantov-zubov-yandex-direct"
+    ],
+    "t": "смешанная (интент рекламный: ppc, кейсы)"
+  },
+  "/prodvizhenie-centrov-vakcinacii/": {
+    "k": [
+      "https://onegin-expert.ru/seo-dlya-czentrov-vakczinaczii"
+    ],
+    "t": "инфо/слабая коммерция (vechkasov, evrica, belberry)"
+  },
+  "/prodvizhenie-massazhnyh-salonov/": {
+    "k": [
+      "https://vechkasov.ru/blog/articles/13-metodov-prodvizheniya-massazhnyh-salonov-sayt-reklama-sots-seti",
+      "https://rim-group.ru/blog/kak-privlech-klientov-v-spa-salon/"
+    ],
+    "t": "инфо-выдача (reg.ru, vc, salon1c)"
+  },
+  "/prodvizhenie-stroitelnyh-sajtov/": {
+    "k": [
+      "https://www.demis.ru/articles/prodvizhenie-stroitelnykh-saytov/",
+      "https://www.advertpro.ru/otraslevye-resheniya/prodvizhenie-stroitelnyh-saytov/",
+      "https://workspace.ru/blog/prodvizhenie-sayta-stroitelnoy-kompanii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-arendy-spectehniki/": {
+    "k": [
+      "https://webolution.ru/blog/kak-prodvigat-arendu-spetstekhniki/",
+      "https://www.alkosto.ru/blog/prodvizhenie-specztexniki/",
+      "https://seoandcontext.ru/tpost/pv86ybshm1-prodvizhenie-i-reklama-arendi-spetstehni"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-prodazhi-betona/": {
+    "k": [
+      "https://www.altera-media.com/optimization/stroitelstvo-i-remont/beton-i-zhbi/",
+      "https://cweb.by/portfolio/seo-sajta-kataloga-po-tematike-prodazha-betona.html",
+      "https://webolution.ru/blog/kak-prodavat-beton-v-internete-i-gde-iskat-novykh-klientov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-dostavki-betona/": {
+    "k": [
+      "https://deksis.ru/cases/dostavka-betona",
+      "https://biznes13.ru/prodvizhenie-saytov/prodvizhenie-dostavki-shchebnya-i-betona/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-dostavki-betona/"
+    ],
+    "t": "смешанная (кейсы)"
+  },
+  "/prodvizhenie-asfaltirovanija/": {
+    "k": [
+      "https://domodigital.ru/services/effektivnoe-prodvizhenie-uslug-po-asfaltirovaniyu-v-internete-dlya-vashego-biznesa",
+      "https://zel-it.ru/cases/prdovizhenie-asfaltirovanie",
+      "https://www.anthome.ru/portfolio/seo/seo-prodvizhenie-sayta-po-remontu-dorog-i-ukladke-asfalta/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-stroitelstva-domov/": {
+    "k": [
+      "https://webolution.ru/blog/kak-prodvigat-stroitelstvo-domov/",
+      "https://callibri.ru/blog/kejs-seo-stroitelnogo-biznesa",
+      "https://www.advertpro.ru/otraslevye-resheniya/prodvizhenie-stroitelnyh-saytov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-remonta-kvartir/": {
+    "k": [
+      "https://searchindustrial.ru/blog/seo/prodvizhenie-sayta-po-remontu-kvartir-v-poiske-kak-poluchat-stabilnyy-potok-zayavok/",
+      "https://relianta.agency/seo-dlya-sajta-remonta-kvartir",
+      "https://seo-dius.ru/prodvizhenie-saitov-po-remontu-kvartir/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-krovelnyh-materialov/": {
+    "k": [
+      "https://ra-tgr.ru/seo-prodvizhenie-sajtov-krovli-i-krovelnye-materialy/",
+      "https://forel-agency.ru/seo-prodvizhenie-sajtov-krovli-i-krovelnye-materialy/",
+      "https://perfo-agency.ru/seo-prodvizhenie-sajta-krovlya-i-krovelnye-materialy/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-fasadnyh-sistem/": {
+    "k": [
+      "https://site-creators.ru/seo-prodvizhenie-sajtov-fasadov-i-fasadnyh-sistem/",
+      "https://ra-tgr.ru/seo-prodvizhenie-sajtov-fasadov-i-fasadnyx-sistem/",
+      "https://perfo-agency.ru/seo-prodvizhenie-sajta-fasady-i-fasadnye-sistemy/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-stroitelnyh-lesov/": {
+    "k": [
+      "https://seohead.pro/blog/seo-prodvizhenie-sajta-po-prodazhe-stroitelnogo-lesa/",
+      "https://webs-lab.ru/seo-prodvizhenie-sajtov-uslug-stroitelnyh-lesov/",
+      "https://a-teleport.ru/seo/stroitelnykh-lesov/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-metallokonstrukcij/": {
+    "k": [
+      "https://cinar.ru/metallokonstruktsii",
+      "https://seoslon.com/sfera/metallokonstruktsii/",
+      "https://maryproject.ru/uslugi/poiskovoe-prodvizhenie/seo-prodvizhenie-sajta-izgotovitelya-metallokonstrukczij/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-okon-osteklenija/": {
+    "k": [
+      "https://sklifosovsky.pro/seo-prodvizhenie-okonnyh-kompanij/",
+      "https://sp.veresking.com/blog-veresking/seo-dlya-kompanij-po-ostekleniyu/",
+      "https://www.web-canape.ru/cases/v-top-za-3-mesyaca-kak-vyvesti-okonnyj-sajt-na-vtoruyu-strochku-yandeksa-i-na-54-uvelichit-poiskovyj-trafik/"
+    ],
+    "t": "смешанная (кейсы)"
+  },
+  "/prodvizhenie-natjazhnyh-potolkov/": {
+    "k": [
+      "https://maryproject.ru/uslugi/seo-prodvizhenie-sajta-natyazhnyix-potolkov-v-moskve/",
+      "https://cinar.ru/natyazhnye-potolki",
+      "https://seotemple.ru/theme/prodvizhenie-natyazhnye-potolki/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-zaborov/": {
+    "k": [
+      "https://ra-tgr.ru/seo-prodvizhenie-sajtov-metallicheskix-zaborov-i-ograzhdeniya/",
+      "https://forel-agency.ru/seo-prodvizhenie-sajtov-metallicheskih-zaborov-i-ograzhdeniya/",
+      "https://perfo-agency.ru/seo-prodvizhenie-sajta-metallicheskie-zabory-i-ograzhdeniya/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-fundamentov/": {
+    "k": [
+      "https://olegdneprovsky.ru/cases/prodvizhenie-stroitelstva-fundamentov/"
+    ],
+    "t": "инфо/кейсы (vc, awidget, rbc)"
+  },
+  "/prodvizhenie-demontazha/": {
+    "k": [
+      "https://domodigital.ru/services/seo-dlya-demontazhnyh-kompaniy-kak-effektivno-prodvigat-uslugi-onlayn",
+      "https://promotions.ru/blog/seo-dlya-kompaniy-po-demontazhnym-rabotam/",
+      "https://www.globalmg.ru/kejsyi/seo/antibeton"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-blagoustrojstva/": {
+    "k": [
+      "https://seoslon.com/sfera/sayty-kompaniy-po-blagoustroystvu-territorii/",
+      "https://mediacontext.pro/cases/prodvizhenie-sayta-po-blagoustroystvu-territoriy",
+      "https://blog.kinetica.su/riestrukturizatsiia-i-seo-optimizatsiia-b2b-saita-po-blaghoustroistvu-tierritorii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazinov-strojmaterialov/": {
+    "k": [
+      "https://webolution.ru/blog/kak-prodvigat-magazin-stroitelnykh-materialov/",
+      "https://ads-pro.pro/prodvizheniye-magazina-stroitelnykh-materialov/",
+      "https://idea-promotion.ru/o-kompanii/blog/prodvizhenie-stroitelnyh-sajtov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-prodazhi-spectehniki/": {
+    "k": [
+      "https://ima-pr.ru/prodvizhenie-spectehniki",
+      "https://delta-ltd.ru/spectehnika/",
+      "https://web-c.ru/poiskovoe-prodvizhenie/tematiki/prodvijenie-sayta-spectehniki/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-inzhenernyh-setej/": {
+    "k": [
+      "https://dotworks.studio/prodvizhenie-sayta-inzhenernyh-sistem.html",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-inzhenernyh-sistem/",
+      "https://domodigital.ru/services/sozdayte-effektivnyy-veb-sayt-dlya-inzhenernyh-setey-i-uluchshite-biznes"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-svarochnyh-rabot/": {
+    "k": [
+      "https://ra-tgr.ru/seo-prodvizhenie-sajtov-svarochnyx-rabot/",
+      "https://site-creators.ru/seo-prodvizhenie-sajtov-svarochnyh-rabot/",
+      "https://perfo-agency.ru/seo-prodvizhenie-sajta-svarochnye-raboty/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-salonov-krasoty/": {
+    "k": [
+      "https://reklama.tochka.com/blog/promo-salon-krasoty"
+    ],
+    "t": "инфо-выдача (kontur, sbertarget, tbank)"
+  },
+  "/prodvizhenie-barbershopov/": {
+    "k": [
+      "https://integrion.biz/articles/barbershop",
+      "https://smirnov.marketing/prodvizhenie-sayta-barbershopa"
+    ],
+    "t": "смешанная (reg.ru, vc)"
+  },
+  "/prodvizhenie-nogtevyh-studij/": {
+    "k": [
+      "https://ra-tgr.ru/seo-prodvizhenie-sajtov-nogtevoj-studii/",
+      "https://webinnovator.ru/seo-prodvizhenie-sajtov-nogtevoj-studii/",
+      "https://b2b.engineering/prodvizhenie-saytov/prodvizhenie-sayta-dlya-nogtevoy-studii/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-spa-salonov/": {
+    "k": [
+      "https://workspace.ru/blog/prodvizhenie-spa-salona-v-2026-godu-gde-iskat-platezhesposobnyh-klientov-i-ne-slit-byudzhet/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-spa-salona/",
+      "https://darvindigital.ru/sozdanie-i-prodvizhenie-saytov-dlya-salonov-krasoty-i-spa/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-tatu-salonov/": {
+    "k": [
+      "https://wa-agency.ru/services/prodvizhenie-sajta-tatu-salona/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-tattoo-salona/",
+      "https://www.seowizard.ru/tatu-salona/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-lazernoj-epiljacii/": {
+    "k": [
+      "https://rookee.ru/blog/kak-prodvigat-studiyu-lazernoy-epilyatsii-v-2026-godu/",
+      "https://webolution.ru/blog/kak-prodvigat-uslugi-lazernoy-epilyatsii/"
+    ],
+    "t": "смешанная (workspace, vechkasov)"
+  },
+  "/prodvizhenie-parikmaherskih/": {
+    "k": [
+      "https://www.advertpro.ru/otraslevye-resheniya/prodvizhenie-sajtov-salonov-krasoty/",
+      "https://www.aaccent.ru/prodvizhenie-sajtov/seo-prodvizhenie-salona-krasoty/",
+      "https://www.rush-agency.ru/blog/metody-prodvizheniya-salonov-krasoty-v-internete/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-studij-krasoty/": {
+    "k": [
+      "https://spiritdigital.ru/prodvizhenie-sajta/prodvizhenie-sajta-salona-krasoty",
+      "https://smirnov.marketing/prodvizhenie-sayta-salona-krasoty"
+    ],
+    "t": "смешанная (klerk, vc, sendpulse)"
+  },
+  "/prodvizhenie-internet-magazinov-po-nisham/": {
+    "k": [
+      "https://kokoc.com/blog/prodvizhenie-internet-magazina-poshagovyy-algoritmy-raboty-sovety-i-rekomendatsii-po-nisham/",
+      "https://avigroup.pro/moscow/prodvizhenie-internet-magazina/"
+    ],
+    "t": "смешанная (craftum, tbank инфо)"
+  },
+  "/prodvizhenie-magazina-odezhdy/": {
+    "k": [
+      "https://reklama.tochka.com/blog/promo-internet-magazina-odezhdy"
+    ],
+    "t": "инфо-выдача (sbertarget, elama, rbc, sberbank)"
+  },
+  "/prodvizhenie-magazina-obuvi/": {
+    "k": [
+      "https://ingate.ru/uslugi/tematiki/prodvizhenie-internet-magazina/obuv/",
+      "https://www.alkosto.ru/blog/reklama-magazina-obuvi/"
+    ],
+    "t": "смешанная (vc, intervolga кейсы)"
+  },
+  "/prodvizhenie-magazina-elektroniki/": {
+    "k": [
+      "https://tire.media/blog/kompleksnoe-prodvizhenie/prodvizhenie-internet-magazina-elektroniki-taktika-pobedy-v-samoy-konkurentnoy-nishe-e-commerce/",
+      "https://private-seo.ru/blog/seo-dlya-internet-magazina-elektroniki-strategiya-prodvizheniya"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-mebeli/": {
+    "k": [
+      "https://trinet.ru/services/seo-prodvizhenie-saytov/mebelnyh-internet-magazinov/",
+      "https://www.advertpro.ru/otraslevye-resheniya/prodvizhenie-mebelnyh-saytov/",
+      "https://www.ashmanov.com/education/articles/kak-prodvigat-magazin-mebeli-prakticheskie-rekomendatsii/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-avtozapchastej/": {
+    "k": [
+      "https://www.rush-agency.ru/blog/prodvizhenie-internet-magazinov-po-prodazhe-avtozapchastej/",
+      "https://docpart.ru/articles/marketing-dlya-magazina-avtozapchastej",
+      "https://gendalf.ru/news/marketing/im-avto/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-kosmetiki/": {
+    "k": [
+      "https://www.ashmanov.com/education/articles/prodvizhenie-magazina-kosmetiki/",
+      "https://www.rush-agency.ru/blog/prodvizhenie-sajta-magazina-kosmetiki/"
+    ],
+    "t": "смешанная (tochka, sber, exiterra)"
+  },
+  "/prodvizhenie-magazina-detskih-tovarov/": {
+    "k": [
+      "https://kokoc.com/otraslevye-resheniya/prodvizhenie-magazina-detskih-igruzhek/",
+      "https://resultup.agency/uslugi/seo-dlya-magazinov/prodvizheniye-detskikh-tovarov",
+      "https://www.rush-agency.ru/blog/prodvizhenie-sajta-internet-magazina-detskih-igrushek/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-cvetov/": {
+    "k": [
+      "https://reklama.tochka.com/blog/kak-prodvigat-dostavku-tzvetov"
+    ],
+    "t": "инфо-выдача (flowwow, sberbank, tbank, posiflora)"
+  },
+  "/prodvizhenie-zoomagazina/": {
+    "k": [
+      "https://vc.ru/seo/2851486-prodvizhenie-zoomagazina-strategii-dlya-uvelicheniya-onlajn-prodazh"
+    ],
+    "t": "инфо-выдача (biz-nes, contact-center, cossa)"
+  },
+  "/prodvizhenie-magazina-produktov/": {
+    "k": [
+      "https://kontur.ru/market/spravka/80193-socseti_produktovyh_magazinov"
+    ],
+    "t": "инфо-выдача (sberbank, saby, moysklad)"
+  },
+  "/prodvizhenie-magazina-podarkov/": {
+    "k": [
+      "https://www.web-canape.ru/prodvizhenie-sajtov/magazin-podarkov/",
+      "https://kokoc.com/otraslevye-resheniya/prodvizhenie-magazina-podarkov-v-internete/",
+      "https://www.alkosto.ru/blog/prodvizhenie-magazina-podarkov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-sporttovarov/": {
+    "k": [
+      "https://ads-pro.pro/seo-prodvizhenie-sportivnykh-tovarov/",
+      "https://private-seo.ru/blog/seo-dlya-sportivnogo-magazina-sezonnye-tovary"
+    ],
+    "t": "смешанная (byyd, adindex)"
+  },
+  "/prodvizhenie-juvelirnogo-magazina/": {
+    "k": [
+      "https://kokoc.com/otraslevye-resheniya/prodvizhenie-yuvelirnogo-magazina/",
+      "https://www.ashmanov.com/education/articles/prodvizhenie-yuvelirnogo-magazina/",
+      "https://www.calltouch.ru/blog/prodvizhenie-yuvelirnogo-magazina-kak-uvelichit-prodazhi-v-internete/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-bytovoj-tehniki/": {
+    "k": [
+      "https://resultup.agency/uslugi/seo-dlya-magazinov/prodvizheniye-bytovoy-tekhniki",
+      "https://atwinta.ru/services/prodvizhenie/seo/bytovaya-tekhnika/",
+      "https://www.alkosto.ru/blog/prodvizhenie-magazina-byitovoj-texniki/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-magazina-instrumentov/": {
+    "k": [
+      "https://burkov.pro/journal/prodvizhenie-magazina-instrumentov",
+      "https://klnv.ru/blog/marketing-prodvizhenie-magazina-instrumentov"
+    ],
+    "t": "смешанная (alkosto, vechkasov, vc)"
+  },
+  "/prodvizhenie-magazina-santehniki/": {
+    "k": [
+      "https://www.rush-agency.ru/cases/magazin-santekhniki/",
+      "https://seo-dius.ru/kejsy/kompleksnoe-prodvizhenie-internet-magazina-santehniki-vanna-houm-s-nulya/",
+      "https://resultup.agency/uslugi/seo-dlya-magazinov/prodvizheniye-santekhniki"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-magazina-avtotovarov/": {
+    "k": [
+      "https://www.rush-agency.ru/blog/prodvizhenie-internet-magazinov-po-prodazhe-avtozapchastej/",
+      "https://domodigital.ru/services/effektivnye-strategii-prodvizheniya-internet-magazina-avtotovarov-dlya-povysheniya-prodazh"
+    ],
+    "t": "смешанная (drive2, habr, кейсы)"
+  },
+  "/prodvizhenie-magazina-tovarov-dlja-doma/": {
+    "k": [
+      "https://finepromo.ru/blog/kak-prodvigat-onlajn-magazin-tovarov-dlya-doma-reklamnaya-strategiya-i-nyuansy/",
+      "https://www.primegate.io/digital/prodvizhenie-internet-magazina-tovarov-dlya-doma",
+      "https://www.synapse-studio.ru/blog/useful/spheres/kontekstnaya-reklama-internet-magazina-tovarov-dlya-doma-chto-rabotaet-v-2026-godu"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-knizhnogo-magazina/": {
+    "k": [
+      "https://resultup.agency/uslugi/seo-dlya-magazinov/prodvizheniye-knizhnogo-sayta",
+      "https://www.web-canape.ru/prodvizhenie-sajtov/magazin-knig/"
+    ],
+    "t": "смешанная (alkosto, vc, seoandcontext)"
+  },
+  "/prodvizhenie-it-sajtov/": {
+    "k": [
+      "https://www.it-agency.ru/services/seo/",
+      "https://hightime.agency/saas-growth"
+    ],
+    "t": "смешанная (tbank, zoon, habr)"
+  },
+  "/prodvizhenie-saas/": {
+    "k": [
+      "https://integrus.ru/blog/internet-marketing-decisions/prodvizhenie-saas",
+      "https://kalinin.pro/blog/articles/seo-dlya-saas-kak-prodvigat-vash-servis/",
+      "https://yagla.ru/blog/o-saitah/kak-effektivno-prodvigat-v-poiskovoy-vydache-saas-produkty--2504u109086/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-veb-studij/": {
+    "k": [
+      "https://ingate.ru/blog/5-sposobov-raskrutit-veb-studiyu/"
+    ],
+    "t": "инфо-выдача (cossa, skillbox, synergy, cmsmagazine)"
+  },
+  "/prodvizhenie-hostingov/": {
+    "k": [
+      "https://webs-lab.ru/seo-prodvizhenie-sajtov-uslug-hostinga/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-hostinga/",
+      "https://domodigital.ru/services/effektivnye-strategii-internet-marketinga-dlya-prodvizheniya-hostinga"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-mobilnyh-prilozhenij/": {
+    "k": [
+      "https://kokoc.com/blog/prodvizhenie-mobilnyh-prilozhenij/",
+      "https://www.it-agency.ru/academy/mobile-app-promotion-guide/"
+    ],
+    "t": "инфо-выдача (netology, mts, tbank)"
+  },
+  "/prodvizhenie-it-autsorsinga/": {
+    "k": [
+      "https://private-seo.ru/blog/seo-dlya-it-autsorsinga-b2b-lidy-devops-podderzhka-admin",
+      "https://8-web.ru/blog/kejs-prodvizhenie-kompanii-po-it-autsorsingu-v-sankt-peterburge-pod-kljuch/",
+      "https://l0i0i0l.ru/prodvizhenie-sajta-it-autsorsinga.html"
+    ],
+    "t": "смешанная (vc, vechkasov)"
+  },
+  "/prodvizhenie-avtomobilnyh-sajtov/": {
+    "k": [
+      "https://kokoc.com/otraslevye-resheniya/avtomobilnaya-tematika/",
+      "https://ingate.ru/uslugi/tematiki/prodvizhenie-avtomobilnyh-sajtov/",
+      "https://prostogroup.com/otraslevye-resheniya/prodvizhenie-avtomobilnyh-sajtov/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-avtoservisa/": {
+    "k": [
+      "https://wesma.agency/blog/prodvizhenie-sayta-avtoservisa/"
+    ],
+    "t": "инфо-выдача (tochka, reg.ru, klerk, zoon)"
+  },
+  "/prodvizhenie-sajtov-avtozapchastej/": {
+    "k": [
+      "https://www.demis.ru/services/otraslevaya-ekspertiza/prodvizhenie-saita-avtozapchastej/",
+      "https://maryproject.ru/uslugi/seo-prodvizhenie-internet-magazina-avtozapchastej-v-moskve/",
+      "https://lead.media/prodvizhenie-sajtov-dlja-avtozapchastej/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-avtosalonov/": {
+    "k": [
+      "https://www.globalmg.ru/blog/reklama-avtosalona"
+    ],
+    "t": "инфо-выдача (tbank, zoon, mediacatalog, ima-pr)"
+  },
+  "/prodvizhenie-shinomontazha/": {
+    "k": [
+      "https://smirnov.marketing/prodvizhenie-sayta-shinomontazha"
+    ],
+    "t": "инфо-выдача (tochka, reg.ru, alterainvest, workspace)"
+  },
+  "/prodvizhenie-avtomoek/": {
+    "k": [
+      "https://iself.pro/blog/reklama-avtomoyki/"
+    ],
+    "t": "инфо-выдача (reg.ru, tenchat, vc, vechkasov)"
+  },
+  "/prodvizhenie-evakuatorov/": {
+    "k": [
+      "https://hot-head.ru/reklama_evacuatora",
+      "https://l0i0i0l.ru/prodvizhenie-sajta-evakuatora.html",
+      "https://callibri.ru/blog/keys-prodvizhenie-i-reklama-evakuatora"
+    ],
+    "t": "смешанная (кейсы)"
+  },
+  "/prodvizhenie-avtotjuninga/": {
+    "k": [
+      "https://webs-lab.ru/seo-prodvizhenie-sajtov-uslug-studii-avtotyuninga/",
+      "https://domodigital.ru/services/effektivnye-strategii-internet-marketinga-dlya-avtotyuninga-vashego-biznesa"
+    ],
+    "t": "смешанная (vc, workspace, cossa)"
+  },
+  "/prodvizhenie-gruzoperevozok/": {
+    "k": [
+      "https://webolution.ru/blog/marketing-dlya-logisticheskih-kompaniy/",
+      "https://soldimarketing.ru/cases/keys-po-prodvizheniyu-gruzoperevozok-mezhdu-rf-i-sng-cherez-seo-i-kontekstnuyu-reklamu/",
+      "https://seoandcontext.ru/tpost/eik1c3e1t1-prodvizhenie-uslug-gruzoperevozki-instru"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-arendy-avto/": {
+    "k": [
+      "https://seoandcontext.ru/tpost/f7fp80e5p1-prodvizhenie-i-reklama-arendi-avto-keisi",
+      "https://rentprog.ru/ru/articles/12"
+    ],
+    "t": "смешанная (habr, vc кейсы)"
+  },
+  "/prodvizhenie-avtoshkol/": {
+    "k": [
+      "https://seoandcontext.ru/tpost/53fbryrve1-kak-prodvigat-avtoshkolu-rabotayuschie-s",
+      "https://marketing-tech.ru/cases/victory-group/kak_uvelichit_potok_klientov_v_5_raz_keys_prodvizheniya_avtoshkoly/"
+    ],
+    "t": "смешанная (tbank, sostav, topvisor)"
+  },
+  "/prodvizhenie-b2b-uslug/": {
+    "k": [
+      "https://www.completo.ru/blog/articles/prodvizhenie-b2b-uslug-na-chto-delat-stavku/"
+    ],
+    "t": "инфо-выдача (kontur, tbank, mtt, elama)"
+  },
+  "/prodvizhenie-juridicheskih-sajtov/": {
+    "k": [
+      "https://www.demis.ru/services/otraslevaya-ekspertiza/prodvizhenie-yuridicheskikh-uslug/"
+    ],
+    "t": "инфо-выдача (klerk, zakon, garant, sbertarget)"
+  },
+  "/prodvizhenie-buhgalterskih-uslug/": {
+    "k": [
+      "https://www.calltouch.ru/blog/reklama-buhgalterskih-uslug-prodvizhenie-i-sovety-po-nastrojke-v-yandeks-direkt-i-google-adwords/",
+      "https://www.kontur-extern.ru/info/83687-prodvizhenie_buhgalterskogo_biznesa"
+    ],
+    "t": "инфо-выдача (tochka, klerk, 1cbo)"
+  },
+  "/prodvizhenie-advokatov/": {
+    "k": [
+      "https://domodigital.ru/services/prodvizhenie-sajta-advokata",
+      "https://www.seowizard.ru/advokata/",
+      "https://apanshin.ru/seo/prodvizhenie-sajta-advokata/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-uslug-bankrotstva/": {
+    "k": [
+      "https://exiterra.ru/blog/marketing-blog/kak-prodvigat-uslugi-bankrotstva-i-drugie-finansovye-uslugi-mfo/"
+    ],
+    "t": "инфо-выдача (elama, texterra, new-point — рекламный интент)"
+  },
+  "/prodvizhenie-registracii-biznesa/": {
+    "k": [
+      "https://creatmedia.ru/bez-rubriki/biznes-na-otkrytii-biznesa-prodvizhenie-uslug-po-registracii-biznesa-na-avito/"
+    ],
+    "t": "инфо-выдача (vechkasov, vtb, ubrr)"
+  },
+  "/prodvizhenie-konsaltinga/": {
+    "k": [
+      "https://www.web-canape.ru/prodvizhenie-sajtov/prodvizhenie-sajta-konsaltinga/",
+      "https://domodigital.ru/services/effektivnoe-prodvizhenie-konsaltingovyh-uslug-onlayn-dlya-rosta-vashego-biznesa",
+      "https://smirnov.marketing/prodvizhenie-konsaltingovyh-uslug"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-ocenochnyh-kompanij/": {
+    "k": [
+      "https://forel-agency.ru/seo-prodvizhenie-sajtov-oczenochnoj-kompanii/",
+      "https://msk.clover-it.ru/services/otsenochnaya-kompaniya/"
+    ],
+    "t": "смешанная (klnv, vechkasov)"
+  },
+  "/prodvizhenie-kadrovyh-agentstv/": {
+    "k": [
+      "https://seopapa.com/prodvizhenie-sayta-kadrovogo-agentstva",
+      "https://www.directline.pro/seo/prodvizhenie-sajta-kadrovogo-agentstva/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-kadrovogo-agentstva/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-promyshlennogo-oborudovanija/": {
+    "k": [
+      "https://domodigital.ru/services/effektivnye-strategii-onlayn-prodvizheniya-promyshlennogo-oborudovaniya-dlya-biznesa",
+      "https://www.web-canape.ru/business/kak-prodavat-i-prodvigat-oborudovanie-effektivnye-strategii-i-kanaly-marketinga/"
+    ],
+    "t": "смешанная (sostav, darvin)"
+  },
+  "/prodvizhenie-proizvoditelej/": {
+    "k": [
+      "https://www.completo.ru/blog/articles/seo-dlya-proizvoditeley-kak-prodvigatsya-s-uchetom-vsekh-ogranicheniy/",
+      "https://lead.media/prodvizhenie-sajtov-proizvoditelej/"
+    ],
+    "t": "смешанная (vc, habr)"
+  },
+  "/prodvizhenie-optovyh-kompanij/": {
+    "k": [
+      "https://searchindustrial.ru/blog/seo/seo-dlya-optovykh-kompaniy-kak-poluchat-klientov-iz-poiska-i-uvelichivat-obem-zayavok/",
+      "https://mwi.me/blog/sposoby-prodvizheniya-optovogo-sayta/",
+      "https://prostogroup.com/otraslevye-resheniya/optovye-internet-magaziny/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-nedvizhimosti/": {
+    "k": [
+      "https://www.aaccent.ru/prodvizhenie-sajtov/prodvizhenie-sajta-nedvizhimosti/",
+      "https://lead.media/prodvizhenie-sajtov-nedvizhimosti/",
+      "https://www.ashmanov.com/seo-prodvizhenie/prodvizhenie-sajtov-nedvizhimosti/"
+    ],
+    "t": "смешанная (klerk)"
+  },
+  "/prodvizhenie-agentstv-nedvizhimosti/": {
+    "k": [
+      "https://yagla.ru/blog/kontekstnaya-reklama/chto-delat-esli-vash-sayt--ne-cian-a-trafik-nujen-uje-seychas-keys-prodvijeniya-agentstva-nedvijimosti--2507u118354/"
+    ],
+    "t": "инфо-выдача (mts, elama, rbc, klerk)"
+  },
+  "/prodvizhenie-novostroek/": {
+    "k": [
+      "https://webmotor.ru/services/promo",
+      "https://dviga.marketing/blog/kak-prodvigat-zhiloj-kompleks-v-2025-godu",
+      "https://beznebes.ru/blog/prodvizhenie-zhilogo-kompleksa-v-2023-godu/"
+    ],
+    "t": "смешанная (profitbase)"
+  },
+  "/prodvizhenie-kommercheskoj-nedvizhimosti/": {
+    "k": [
+      "https://www.ashmanov.com/education/articles/prodvizhenie-kommercheskoj-nedvizhimosti/",
+      "https://setevie.com/articles/reklama-kommercheskoj-nedvizhimosti"
+    ],
+    "t": "инфо-выдача (cian, convertme)"
+  },
+  "/prodvizhenie-zagorodnoj-nedvizhimosti/": {
+    "k": [
+      "https://www.calltouch.ru/blog/kak-prodvigat-zagorodnuyu-nedvizhimost-i-uvelichit-kolichestvo-czelevyh-obrashhenij-v-8-raz/",
+      "https://starta.ru/blog/gotovimsya-k-sezonu-prodazh-zaranee-instrumentyi-prodvizheniya-zagorodnoj-nedvizhimosti-v-internete"
+    ],
+    "t": "инфо-выдача (rbc, cian, habr)"
+  },
+  "/prodvizhenie-arendy-zhilja/": {
+    "k": [
+      "https://sv-digital.com/stati/prodvizhenie-arendy-kvartir-posutochno",
+      "https://www.globalmg.ru/blog/kak-prodvigat-posutochnuyu-arendu"
+    ],
+    "t": "инфо-выдача (tochka, travelline, cian)"
+  },
+  "/prodvizhenie-sajtov-uslug-naseleniju/": {
+    "k": [
+      "https://blog.promopult.ru/sales/osobennosti-prodvizheniya-sajtov-uslug.html",
+      "https://avigroup.pro/moscow/"
+    ],
+    "t": "инфо-выдача (tochka, vc)"
+  },
+  "/prodvizhenie-kliningovyh-kompanij/": {
+    "k": [
+      "https://rookee.ru/blog/prodvizhenie-kliningovoy-kompanii-seo-ai-search-i-luchshie-kanaly-privlecheniya-klientov/"
+    ],
+    "t": "инфо-выдача (tochka, tbank, reg.ru, texterra)"
+  },
+  "/prodvizhenie-remonta-tehniki/": {
+    "k": [
+      "https://smirnov.marketing/prodvizhenie-saitov-remonta-tekhniki"
+    ],
+    "t": "инфо-выдача (vc, cmsmagazine, elama)"
+  },
+  "/prodvizhenie-pereezdov/": {
+    "k": [
+      "https://seora.agency/per",
+      "https://ozhgibesov.agency/cases/prodvizhenie-uslug-pereezdov-gruzoperevozok-google/"
+    ],
+    "t": "смешанная (vechkasov, smm)"
+  },
+  "/prodvizhenie-dezinfekcii/": {
+    "k": [
+      "https://t4ka.ru/prodvizhenie-sluzhby-dezinfekcii",
+      "https://sitorium.ru/project/profhimservice-case/"
+    ],
+    "t": "смешанная (yagla, marketing-tech кейсы)"
+  },
+  "/prodvizhenie-ohrannyh-uslug/": {
+    "k": [
+      "https://l0i0i0l.ru/prodvizhenie-sajta-ohrannoj-kompanii.html",
+      "https://vbi.ru/blog/keys-vbi-dlya-yandeksa-prodvizhenie-okhrannykh-uslug/"
+    ],
+    "t": "смешанная (vechkasov, sostav)"
+  },
+  "/prodvizhenie-svadebnyh-uslug/": {
+    "k": [
+      "https://seora.agency/svadba",
+      "https://seoandcontext.ru/tpost/crfafbp5s1-prodvizhenie-i-reklama-svadebnogo-salona"
+    ],
+    "t": "смешанная (klnv, rb, vc)"
+  },
+  "/prodvizhenie-fotografov/": {
+    "k": [
+      "https://blog.vigbo.com/prodvizhenie-sajta-fotografa",
+      "https://domodigital.ru/services/effektivnye-strategii-prodvizheniya-uslug-fotografa-onlayn-dlya-rosta-vashego-biznesa"
+    ],
+    "t": "инфо-выдача (tochka, pr-cy, vc)"
+  },
+  "/prodvizhenie-event-agentstv/": {
+    "k": [
+      "https://lz.media/event-prodvizhenie",
+      "https://airsmb.ru/ready/eventagency/event-agentstvo-prodvighe/",
+      "https://onespot.one/all-posts/reklama-i-prodvizhenie-meropriyatiy-i-event-agentstv"
+    ],
+    "t": "смешанная (event.ru)"
+  },
+  "/prodvizhenie-ritualnyh-uslug/": {
+    "k": [
+      "https://leadmachine.ru/kejsy/prodvizhenie-ritualnyh-uslug/",
+      "https://re-spond.com/solution/funeral-service-agency"
+    ],
+    "t": "инфо-выдача (tbank, rb, cossa)"
+  },
+  "/prodvizhenie-restoranov/": {
+    "k": [
+      "https://saby.ru/articles/presto/prodvizhenie_restoranov_kafe_v_internete"
+    ],
+    "t": "инфо-выдача (vtb, sbertarget, tochka, rb)"
+  },
+  "/prodvizhenie-dostavki-edy/": {
+    "k": [
+      "https://blog.quickresto.ru/marketing-dostavki-edy",
+      "https://www.calltouch.ru/blog/kak-reklamirovat-dostavku-edy/"
+    ],
+    "t": "инфо-выдача (tbank, chibbis, rbc)"
+  },
+  "/prodvizhenie-otelej/": {
+    "k": [
+      "https://www.demis.ru/articles/prodvizhenie-gostinitsy-i-otelya-v-internete-instrumenty-i-metody/",
+      "https://mag.russpass.ru/business/rubric/biznes/prodvizhenie-otelya-v-internete"
+    ],
+    "t": "инфо-выдача (sbertarget, kontur, mbschool)"
+  },
+  "/prodvizhenie-turagentstv/": {
+    "k": [
+      "https://www.redsign.ru/media/news/8-sposobov-uvelichit-dokhody-turisticheskogo-agentstva/"
+    ],
+    "t": "инфо-выдача (klerk, mango, kontur, tochka)"
+  },
+  "/prodvizhenie-baz-otdyha/": {
+    "k": [
+      "https://www.alkosto.ru/blog/reklama-bazyi-otdyixa/",
+      "https://resort.artpeople.ru/kak-privlech-klientov-na-bazu-otdyha/"
+    ],
+    "t": "инфо-выдача (travelline, sostav)"
+  },
+  "/prodvizhenie-kejteringa/": {
+    "k": [
+      "https://cinar.ru/keytering",
+      "https://seoandcontext.ru/tpost/bknyyoy731-sekreti-prodvizheniya-keiteringa-provere"
+    ],
+    "t": "смешанная (vechkasov, vc)"
+  },
+  "/prodvizhenie-obrazovatelnyh-sajtov/": {
+    "k": [
+      "https://resultup.agency/uslugi/prodvizhenie-obrazovatelnyh-sajtov",
+      "https://ics-media.ru/uslugi/seo/obrazovanie/",
+      "https://www.seonews.ru/analytics/prodvizhenie-onlayn-shkol-i-kursov-osobennosti-seo-v-obrazovatelnoy-nishe/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-onlajn-shkol/": {
+    "k": [
+      "https://sbertarget.ru/blog/target/tpost/gjxm2tc1c1-kak-prodvigat-kursi-i-onlain-shkoli-osob"
+    ],
+    "t": "инфо-выдача (rbc, vc, tochka, calltouch)"
+  },
+  "/prodvizhenie-kursov/": {
+    "k": [
+      "https://skillbox.ru/media/education/kak-prodvigat-svoy-onlaynkurs/",
+      "https://cloudpayments.ru/blog/how-to-promote-online-school-and-courses/"
+    ],
+    "t": "инфо-выдача (sbertarget, tochka)"
+  },
+  "/prodvizhenie-jazykovyh-shkol/": {
+    "k": [
+      "https://www.aaccent.ru/blog/prodvizhenie-shkoly-anglijskogo-i-ne-tolko/",
+      "https://burkov.pro/journal/prodvizhenie-jazykovyh-shkol"
+    ],
+    "t": "инфо-выдача (rbc, vc, vechkasov)"
+  },
+  "/prodvizhenie-detskih-centrov/": {
+    "k": [
+      "https://workspace.ru/blog/gde-brat-klientov-detskomu-centru-chestnyy-razbor-reklamnyh-kanalov-ot-eksperta/"
+    ],
+    "t": "инфо-выдача (tbank, vc, franshiza)"
+  },
+  "/prodvizhenie-repetitorov/": {
+    "k": [
+      "https://rookee.ru/blog/kak-prodvigat-repetitora-cherez-poisk-v-2026-godu/",
+      "https://planerka.app/blog/prodvizhenie-repetitora-bez-ploshchadok/"
+    ],
+    "t": "инфо-выдача (texterra, ppc, vechkasov)"
+  },
+  "/prodvizhenie-finansovyh-sajtov/": {
+    "k": [
+      "https://wbooster.ru/services/seo/prodvizhenie-finansovykh-saytov/",
+      "https://head-promo.ru/prodvizhenie-sajtov-finansovyh-kompanij/",
+      "https://www.ashmanov.com/education/articles/prodvizhenie-sayta-banka-trendy/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-mfo/": {
+    "k": [
+      "https://www.rush-agency.ru/seo-prodvizhenie/mfo/",
+      "https://flexites.org/prodv-sajtov-mfk/moskva/",
+      "https://seo.ru/blog/kak-uvelichit-konversiyu-sajta-mfo-v-2-raza/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-kreditnyh-brokerov/": {
+    "k": [
+      "https://johndoe.pro/keys-prodvizheniye-kompanii-kreditnogo-brokera",
+      "https://linkodium.com/portfolio/lead-generation-for-a-loan-broker/"
+    ],
+    "t": "смешанная (yagla, cossa кейсы)"
+  },
+  "/prodvizhenie-strahovanija/": {
+    "k": [
+      "https://domodigital.ru/services/prodvigayte-strahovye-uslugi-onlayn-s-effektivnym-digital-marketing",
+      "https://klnv.ru/blog/marketing-prodvizhenie-strakhovoy-kompanii"
+    ],
+    "t": "инфо-выдача (polis, klerk, apptask)"
+  },
+  "/prodvizhenie-kriptoobmennikov/": {
+    "k": [
+      "https://biznes13.ru/prodvizhenie-saytov/prodvizhenie-kriptoobmennika/",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-kriptobirzhy-i-kriptoobmennika/",
+      "https://seo-business-school.ru/seo-cases/prodvizhenie-kriptoobmennika/"
+    ],
+    "t": "смешанная"
+  },
+  "/prodvizhenie-investicionnyh-sajtov/": {
+    "k": [
+      "https://domodigital.ru/services/effektivnoe-prodvizhenie-investitsionnyh-uslug-onlayn-dlya-vashego-biznesa",
+      "https://olegdneprovsky.ru/cases/prodvizhenie-i-reklama-investicionnogo-fonda/"
+    ],
+    "t": "смешанная (alkosto, vechkasov, rbc)"
+  },
+  "/prodvizhenie-fitnes-klubov/": {
+    "k": [
+      "https://fitbase.io/blog/prodvizhenie-fitnes-kluba"
+    ],
+    "t": "инфо-выдача (tochka, sbertarget, klerk)"
+  },
+  "/prodvizhenie-sportzalov/": {
+    "k": [
+      "https://fitbase.io/blog/prodvizhenie-fitnes-kluba",
+      "https://www.fitness1c.ru/blog/kak-fitnes-klubu-privlech-novyh-klientov/"
+    ],
+    "t": "инфо-выдача (tochka, sbertarget, klerk)"
+  },
+  "/prodvizhenie-joga-studij/": {
+    "k": [
+      "https://www.fitness1c.ru/blog/kak-prodvigat-uslugi-studii-jogi-chtoby-uvelichit-prodazhi/",
+      "https://mobifitness.ru/blog/studiya-yogi-prodvizhenie-odnogo-iz-veduschih-fitnes-trendov/"
+    ],
+    "t": "инфо-выдача (reg.ru, vechkasov)"
+  },
+  "/prodvizhenie-bassejnov/": {
+    "k": [
+      "https://swimlead.ru/",
+      "https://domodigital.ru/services/effektivnoe-prodvizhenie-uslug-basseyna-v-internete-dlya-privlecheniya-klientov"
+    ],
+    "t": "смешанная (tochka, vc, vechkasov)"
+  },
+  "/prodvizhenie-sportivnyh-sekcij/": {
+    "k": [
+      "https://seoandcontext.ru/tpost/rttl6xr6j1-prodvizhenie-i-reklama-sportivnih-sektsi",
+      "https://new-point.bz/blog/drugoe/kak-stabilno-poluchat-klientov-dlya-detskoj-sportivnoj-sekczii/"
+    ],
+    "t": "инфо-выдача (reg.ru, vechkasov)"
+  },
+  "/prodvizhenie-horeca-turizm/": {
+    "k": [
+      "https://www.demis.ru/articles/prodvizhenie-gostinitsy-i-otelya-v-internete-instrumenty-i-metody/"
+    ],
+    "t": "инфо-выдача (russpass, klerk, sbertarget)"
+  },
+  "/sozdanie-sajtov/": {
+    "k": [
+      "https://www.reg.ru/sozdanie-saita/pod-kluch"
+    ],
+    "t": "конструкторы/смешанная (tilda, ucoz, lpmotor)"
+  },
+  "/razrabotka-internet-magazina/": {
+    "k": [
+      "https://www.web-canape.ru/razrabotka-sajta/individualnye-resheniya/internet-magazin/",
+      "https://www.insales.ru/page/custom-website"
+    ],
+    "t": "смешанная (kwork, saby, timeweb)"
+  },
+  "/razrabotka-lendinga/": {
+    "k": [
+      "https://komarovaeee.com/landing"
+    ],
+    "t": "инфо/конструкторы (kwork, sweb, unisender)"
+  },
+  "/razrabotka-korporativnogo-sajta/": {
+    "k": [
+      "https://softmg.ru/development/corporate/",
+      "https://www.castcom.ru/services/razrabotka-sajtov/corporate/",
+      "https://fact.digital/services/sozdanie-korporativnogo-sayta/"
+    ],
+    "t": "коммерческая"
+  },
+  "/razrabotka-sajta-vizitki/": {
+    "k": [
+      "https://kwork.ru/categories/website-development/noviy-sayt-vizitka",
+      "https://tilda.cc/ru/lp/sozdat-sait-vizitku-besplatno/"
+    ],
+    "t": "инфо/конструкторы (timeweb, tochka, calltouch)"
+  },
+  "/redizajn-sajta/": {
+    "k": [
+      "https://victoryagency.ru/blog/digital/kak-sdelat-redizayn-gotovogo-sayta-i-chto-v-nego-obychno-vhodit",
+      "https://atwinta.ru/material/blog/redizajn-sajta-chto-jeto-takoe-i-zachem-on-nuzhen/",
+      "https://kokoc.com/blog/redizajn-sajta/"
+    ],
+    "t": "инфо-выдача (skyeng, tochka)"
+  },
+  "/prodvizhenie-v-yandex-kartah/": {
+    "k": [
+      "https://timeweb.com/ru/community/articles/sekrety-prodvizheniya-biznesa-na-yandeks-kartah",
+      "https://journal.topvisor.com/ru/practice/how-to-promote-a-site-on-yandex-maps/"
+    ],
+    "t": "инфо-выдача (unisender, tochka, tbank)"
+  },
+  "/prodvizhenie-v-2gis/": {
+    "k": [
+      "https://rocketdata.ru/blog/zapusk-rekami-v-2gis"
+    ],
+    "t": "инфо/реклама (reklama.2gis, click, elama)"
+  },
+  "/": {
+    "k": [
+      "https://seosafe.ru/",
+      "https://www.advertpro.ru/",
+      "https://seaccelerator.ru/"
+    ],
+    "t": "коммерческая (топ забит Я.Услугами/Директом)"
+  },
+  "/uslugi/": {
+    "k": [
+      "https://seosafe.ru/",
+      "https://seaccelerator.ru/order-promotion",
+      "https://avigroup.pro/moscow/"
+    ],
+    "t": "коммерческая"
+  },
+  "/prodvizhenie-fitnes-sport/": {
+    "k": [
+      "https://intop-media.ru/raskrutka-sajta/prodvizhenie-sportivnyh-sajtov/",
+      "https://s1-agency.ru/prodvizhenie-sportivnykh-sajtov",
+      "https://webtronics.ru/prodvizhenie-sajtov/sportivnye-sajty/"
+    ],
+    "t": "коммерческая"
+  },
+  "/razrabotka-sajta-kataloga/": {
+    "k": [
+      "https://orbitsoft.com/ru/razrabotka-web-saytov/razrabotka-sajta-kataloga.html",
+      "https://on-target.pro/sozdanie-saytov/sozdanie-sayta-kataloga/",
+      "https://wrp.ru/uslugi/sayt-katalog/"
+    ],
+    "t": "коммерческая"
+  },
+  "/razrabotka-na-wordpress/": {
+    "k": [
+      "https://visualweb.ru/sozdanie-sajta/sozdanie-i-razrabotka-sajta-na-wordpress/",
+      "https://veonix.ru/website/wordpress/",
+      "https://ivit.pro/internet-marketing/razrabotka-saytov/wordpress/"
+    ],
+    "t": "смешанная (wordpress.com, wpshop)"
+  },
+  "/razrabotka-na-bitrix/": {
+    "k": [
+      "https://gendalf.ru/svc/services/1c-bitrix/",
+      "https://lead.media/sozdanie-sajtov/bitrix/",
+      "https://ivit.pro/internet-marketing/razrabotka-saytov/bitrix/"
+    ],
+    "t": "коммерческая"
+  },
+  "/razrabotka-na-tilda/": {
+    "k": [
+      "https://gromovbranding.ru/zakazat-razrabotku-sayta-na-tilde",
+      "https://komarovaeee.com/"
+    ],
+    "t": "инфо/конструктор (tilda.cc, tilda.education)"
+  },
+  "/seo-sajt-pod-kljuch/": {
+    "k": [
+      "https://www.aaccent.ru/sozdanie-sajtov/",
+      "https://www.webit.ru/"
+    ],
+    "t": "коммерческая (youla, reg, zoon в топе)"
+  },
+  "/prodvizhenie-na-avito-pod-kljuch/": {
+    "k": [
+      "https://callibri.ru/blog/platnoe-i-besplatnoe-prodvizhenie-na-avito",
+      "https://www.insales.ru/blogs/university/kak-prodvigatsya-na-avito"
+    ],
+    "t": "инфо-выдача (tochka, vtb, alfabank)"
+  },
+  "/geomarketing/": {
+    "k": [
+      "https://www.geomark.ru/"
+    ],
+    "t": "инфо-выдача (vtb, kontur, unisender, skillbox)"
+  },
+  "/prodvizhenie-yandex-biznes/": {
+    "k": [
+      "https://business.yandex/prodvizhenie/",
+      "https://reklama.tochka.com/blog/yandex-business"
+    ],
+    "t": "инфо/сервис (tbank, elama, klerk)"
+  },
+  "/prodvizhenie-google-maps/": {
+    "k": [
+      "https://topfacemedia.com/blog/prodvizhenie-v-google-maps",
+      "https://texterra.ru/blog/prodvizhenie-kompanii-na-kartakh-yandeks-i-google.html"
+    ],
+    "t": "инфо-выдача (yagla, calltouch, ppc)"
+  },
+  "/prodvizhenie-na-ploshhadkah/": {
+    "k": [
+      "https://www.reg.ru/blog/prodvizhenie-tovarov-na-marketplejsah/"
+    ],
+    "t": "инфо-выдача (elama, tbank — интент про маркетплейсы)"
+  }
+}
