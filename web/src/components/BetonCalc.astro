@@ -1,0 +1,33 @@
+---
+import { BETON_PRICES } from '../lib/beton';
+---
+<div class="calc" id="calc">
+  <div class="calc-grid">
+    <label>Материал
+      <select id="bt-mat">
+        <option value="gravel">Бетон на гравии</option>
+        <option value="granite">Бетон на граните</option>
+      </select>
+    </label>
+    <label>Марка
+      <select id="bt-mark">
+        {BETON_PRICES.gravel.map((r) => <option value={r.mark}>{r.mark}</option>)}
+      </select>
+    </label>
+    <label>Объём, м³
+      <input id="bt-vol" type="number" min="1" value="8" />
+    </label>
+    <label>Доставка
+      <select id="bt-del">
+        <option value="0">Раменский район — 0</option>
+        <option value="500">до 5 км — 500 ₽/м³</option>
+        <option value="600">5–10 км — 600 ₽/м³</option>
+        <option value="700">10–15 км — 700 ₽/м³</option>
+        <option value="900">40–50 км — 900 ₽/м³</option>
+      </select>
+    </label>
+  </div>
+  <p class="calc-out" id="bt-out">Итого: 37 600 ₽</p>
+  <p>После расчёта цена держится 24 часа. Раменский район — доставка бесплатно.</p>
+  <a class="btn" href="#lead">Заказать по этой цене</a>
+</div>

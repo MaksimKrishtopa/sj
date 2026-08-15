@@ -1,7 +1,9 @@
 ---
 import Faq from './Faq.astro';
 import LeadForm from './LeadForm.astro';
+import BetonCalc from './BetonCalc.astro';
 import { siteHref } from '../lib/paths';
+import { loadBetonPages } from '../lib/beton';
 import type { PageDoc } from '../lib/types';
 
 interface Props {
@@ -18,6 +20,13 @@ const crumbs = [
     text: part.replace(/-/g, ' '),
   })),
 ];
+const known = mount === 'beton' ? new Set(loadBetonPages().map((p) => p.url)) : null;
+const links = doc.links.filter((l) => !known || known.has(l.href));
+const wantCalc = mount === 'beton' && (['/ceny/', '/dostavka/', '/kalkulyator/'].includes(doc.url) || doc.html.includes('<!--BT-CALC-->'));
+let source = doc.html;
+if (wantCalc && !source.includes('<!--BT-CALC-->')) source += '<!--BT-CALC-->';
+const pieces = source.split(/(<!--BT-CALC-->|<!--BT-FORM-->)/);
+const hasInlineForm = pieces.includes('<!--BT-FORM-->');
 ---
 <div class="wrap crumbs">
   {crumbs.map((c, i) => (
@@ -36,7 +45,19 @@ const crumbs = [
   </div>
 </section>
 <section class="section">
-  <div class="wrap prose" set:html={doc.html} />
+  <div class="wrap prose">
+    {pieces.map((piece) => (
+      piece === '<!--BT-CALC-->' ? (
+        <BetonCalc />
+      ) : piece === '<!--BT-FORM-->' ? (
+        <div id="lead">
+          <LeadForm title="Написать нам" subtitle="Оставьте данные — перезвоним в течение 15 минут" cta={cta} />
+        </div>
+      ) : (
+        <div set:html={piece} />
+      )
+    ))}
+  </div>
 </section>
 {doc.faq.length > 0 && (
   <section class="section alt soft">
@@ -45,20 +66,22 @@ const crumbs = [
     </div>
   </section>
 )}
-{doc.links.length > 0 && (
+{links.length > 0 && (
   <section class="section">
     <div class="wrap">
       <h2>Связанные страницы</h2>
       <div class="link-grid cards g3">
-        {doc.links.slice(0, 12).map((l) => (
+        {links.slice(0, 12).map((l) => (
           <a class="card jz-card vg-card" href={siteHref(mount, l.href)}>{l.text}</a>
         ))}
       </div>
     </div>
   </section>
 )}
-<section class="section" id="lead">
-  <div class="wrap">
-    <LeadForm cta={cta} />
-  </div>
-</section>
+{!hasInlineForm && (
+  <section class="section" id="lead">
+    <div class="wrap">
+      <LeadForm cta={cta} />
+    </div>
+  </section>
+)}

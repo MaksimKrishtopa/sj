@@ -24,6 +24,10 @@ export function getStaticPaths() {
       seen.add('tovarnyy-beton-hub');
       paths.push({ params: { slug: 'tovarnyy-beton-hub' }, props: { doc: page } });
     }
+    if (page.url === '/beton-dlya-fundamenta/' && !seen.has('vidy-betona/beton-dlya-fundamenta')) {
+      seen.add('vidy-betona/beton-dlya-fundamenta');
+      paths.push({ params: { slug: 'vidy-betona/beton-dlya-fundamenta' }, props: { doc: page } });
+    }
   }
   return paths;
 }

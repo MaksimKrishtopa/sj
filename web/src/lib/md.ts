@@ -226,6 +226,10 @@ export function extractFaq(text: string): FaqItem[] {
   for (const m of starFaq) {
     items.push({ q: cleanInline(m[1]), a: cleanInline(m[2]) });
   }
+  const vo = [...text.matchAll(/\*\*В:\s*([^*]+)\*\*\s*\nО:\s*([^\n]+)/g)];
+  for (const m of vo) {
+    items.push({ q: cleanInline(m[1]), a: cleanInline(m[2]) });
+  }
   const seen = new Set<string>();
   return items.filter((it) => {
     if (!it.q || !it.a || seen.has(it.q)) return false;
@@ -360,6 +364,11 @@ function isDropHeading(title: string): boolean {
     t === 'hero' ||
     t === 'b1' ||
     t === 'b2' ||
+    t === 'faq' ||
+    t === 'seo-текст' ||
+    t === 'seo текст' ||
+    /^калькулятор/.test(t) ||
+    /^прайс-лист pdf/.test(t) ||
     /^контент по блокам/.test(t) ||
     /^контент страницы/.test(t) ||
     /^страница:/.test(t) ||
@@ -522,6 +531,30 @@ export function polishPublicHtml(html: string): string {
   out = out.replace(/email\s*`+`*/g, '');
   out = out.replace(/Завод\s+Завод вагон-домов/g, 'Завод вагон-домов');
   out = out.replace(/<ul>\s*<\/ul>/gi, '');
+  out = out.replace(/<p>\s*\[[^\]]+\]\s*<\/p>/g, '');
+  out = out.replace(/<p>[^<]*\[[^\]]*(?:карта|контент|клиент|компонент|уточнить|место для)[^\]]*\][^<]*<\/p>/gi, '');
+  out = out.replace(/<p>\s*<strong>\s*(Ориентиры|Парковка|WhatsApp)\s*:?\s*<\/strong>\s*<\/p>/gi, '');
+  out = out.replace(/<p>\s*<strong>\s*(Ориентиры|Парковка)\s*:?\s*<\/strong>\s*<\/p>/gi, '');
+  out = out.replace(/<h[1-6][^>]*>\s*(Seo-текст|FAQ|Faq|Прайс-лист pdf|Калькулятор(?:\s*→)?)\s*<\/h[1-6]>/gi, '');
+  out = out.replace(/<h2>([^<]+)<\/h2>\s*<h2>\1<\/h2>/gi, '<h2>$1</h2>');
+  out = out.replace(/<h2>Зона доставки<\/h2>\s*<h2>/i, '<h2>');
+  out = out.replace(/<h2>Тарифы доставки<\/h2>\s*<h2>/i, '<h2>');
+  out = out.replace(/<h2>Что такое товарный бетон<\/h2>\s*<h2>/i, '<h2>');
+  out = out.replace(/<h2>\s*(Полная форма заявки|Подвал|Шапка сайта|Форма заявки)\s*<\/h2>/gi, '');
+  out = out.replace(/<h[1-6][^>]*>\s*Написать нам[^<]*<\/h[1-6]>(?:\s*<p>[^<]*форме[^<]*<\/p>)?/i, '<!--BT-FORM-->');
+  out = out.replace(/<h[1-6][^>]*>\s*(?:КАЛЬКУЛЯТОР[^<]*|Калькулятор[^<]*)<\/h[1-6]>/gi, '<!--BT-CALC-->');
+  if (!out.includes('<!--BT-CALC-->') && /рассчитайте стоимость бетона/i.test(out)) {
+    out = out.replace(/(<h[1-6][^>]*>\s*Рассчитайте стоимость бетона[\s\S]*?<\/h[1-6]>)/i, '$1\n<!--BT-CALC-->');
+  }
+  out = out.replace(/(<!--BT-CALC-->\s*){2,}/g, '<!--BT-CALC-->');
+  if (/Туполевское шоссе/i.test(out) && !/map-widget|openstreetmap/i.test(out)) {
+    out = out.replace(
+      /(<p><strong>Адрес:<\/strong>[^<]*<\/p>)/i,
+      '<iframe class="map" title="Завод на карте" src="https://yandex.ru/map-widget/v1/?ll=38.1426%2C55.5978&z=16&text=%D0%B3.%20%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%A2%D1%83%D0%BF%D0%BE%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014%20%D1%813" width="100%" height="320" loading="lazy"></iframe>\n$1',
+    );
+  }
+  out = out.replace(/(<hr\s*\/?>\s*){2,}/gi, '<hr>');
+  out = out.replace(/<p>\s*<\/p>/g, '');
   return out.replace(/\n{3,}/g, '\n\n');
 }
 

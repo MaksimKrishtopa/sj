@@ -17,6 +17,26 @@ const SKIP = new Set([
   'design-brief.md',
 ]);
 
+const BETON_HREF_FIX: Record<string, string> = {
+  '/vidy-betona/beton-dlya-fundamenta/': '/beton-dlya-fundamenta/',
+  '/vidy-betona/beton-dlya-styazhki/': '/beton-dlya-styazhki/',
+  '/vidy-betona/beton-dlya-otmostki/': '/beton-dlya-otmostki/',
+  '/kalkulyator/': '/ceny/',
+};
+
+export function fixBetonHref(href: string): string {
+  const n = href.endsWith('/') ? href : `${href}/`;
+  return BETON_HREF_FIX[n] || n;
+}
+
+function fixBetonHrefs(html: string): string {
+  let out = html;
+  for (const [from, to] of Object.entries(BETON_HREF_FIX)) {
+    out = out.replaceAll(from, to);
+  }
+  return out;
+}
+
 function slugFromName(name: string): string {
   return name.replace(/^content-/, '').replace(/^blog-/, '').replace(/\.md$/, '');
 }
@@ -41,7 +61,7 @@ function parseBetonFile(file: string, isBlog: boolean): PageDoc | null {
     extractLead(raw).slice(0, 160);
   const h1 = extractH1(raw) || title;
   const lead = extractLead(raw);
-  const html = rewriteSiteLinks(toPublicHtml(raw), 'beton');
+  const html = rewriteSiteLinks(fixBetonHrefs(toPublicHtml(raw)), 'beton');
   return {
     url,
     title,
@@ -50,7 +70,7 @@ function parseBetonFile(file: string, isBlog: boolean): PageDoc | null {
     lead,
     html,
     faq: extractFaq(raw),
-    links: extractLinks(raw),
+    links: extractLinks(raw).map((l) => ({ ...l, href: fixBetonHref(l.href) })),
     kind: isBlog ? 'blog' : url === '/' ? 'home' : 'page',
   };
 }

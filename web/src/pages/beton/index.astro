@@ -2,6 +2,7 @@
 import BetonLayout from '../../layouts/BetonLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import Faq from '../../components/Faq.astro';
+import BetonCalc from '../../components/BetonCalc.astro';
 import { siteHref } from '../../lib/paths';
 import { BETON_CITIES, BETON_DELIVERY, BETON_PRICES, BETON_REVIEWS, betonByUrl } from '../../lib/beton';
 
@@ -89,36 +90,7 @@ const jsonLd = [
   <section class="section alt" id="calc">
     <div class="wrap">
       <h2>Рассчитайте стоимость онлайн</h2>
-      <div class="calc">
-        <div class="calc-grid">
-          <label>Материал
-            <select id="bt-mat">
-              <option value="gravel">Бетон на гравии</option>
-              <option value="granite">Бетон на граните</option>
-            </select>
-          </label>
-          <label>Марка
-            <select id="bt-mark">
-              {BETON_PRICES.gravel.map((r) => <option value={r.mark} data-price={r.price}>{r.mark}</option>)}
-            </select>
-          </label>
-          <label>Объём, м³
-            <input id="bt-vol" type="number" min="1" value="8" />
-          </label>
-          <label>Доставка
-            <select id="bt-del">
-              <option value="0">Раменский район — 0</option>
-              <option value="500">до 5 км — 500 ₽/м³</option>
-              <option value="600">5–10 км — 600 ₽/м³</option>
-              <option value="700">10–15 км — 700 ₽/м³</option>
-              <option value="900">40–50 км — 900 ₽/м³</option>
-            </select>
-          </label>
-        </div>
-        <p class="calc-out" id="bt-out">Итого: 37 600 ₽</p>
-        <p>После расчёта цена держится 24 часа</p>
-        <a class="btn" href="#lead">Заказать по этой цене</a>
-      </div>
+      <BetonCalc />
     </div>
   </section>
 
@@ -239,25 +211,6 @@ const jsonLd = [
 </BetonLayout>
 
 <script>
-  const prices: Record<string, Record<string, number>> = {
-    gravel: { М100: 4150, М150: 4300, М200: 4700, М250: 4900, М300: 5100, М350: 5250, М400: 5450, М450: 5650 },
-    granite: { М100: 4600, М200: 5150, М300: 5550, М400: 5900, М500: 6300, М600: 6600 },
-  };
-  const mat = document.getElementById('bt-mat') as HTMLSelectElement | null;
-  const mark = document.getElementById('bt-mark') as HTMLSelectElement | null;
-  const vol = document.getElementById('bt-vol') as HTMLInputElement | null;
-  const del = document.getElementById('bt-del') as HTMLSelectElement | null;
-  const out = document.getElementById('bt-out');
-  function recalc() {
-    if (!mat || !mark || !vol || !del || !out) return;
-    const p = prices[mat.value]?.[mark.value] || 5100;
-    const v = Number(vol.value) || 1;
-    const d = Number(del.value) || 0;
-    const sum = (p + d) * v;
-    out.textContent = `Итого: ${sum.toLocaleString('ru-RU')} ₽`;
-  }
-  [mat, mark, vol, del].forEach((el) => el?.addEventListener('change', recalc));
-  vol?.addEventListener('input', recalc);
   document.querySelectorAll('.tab').forEach((tab) => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach((t) => t.classList.remove('active'));
