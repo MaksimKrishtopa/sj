@@ -19,7 +19,7 @@ export const JAZZ_DIR = path.join(REPO_ROOT, 'vibecode-seojazz');
 export const VAGON_DIR = path.join(REPO_ROOT, 'Вагон дом 2.0');
 
 export function siteHref(mount: string, url = '/'): string {
-  const base = import.meta.env.BASE_URL || '/';
+  const base = import.meta.env?.BASE_URL || '/';
   const normalized = url.startsWith('/') ? url : `/${url}`;
   const trimmed = normalized === '/' ? '' : normalized.replace(/^\//, '');
   const prefix = mount.replace(/^\/|\/$/g, '');
@@ -29,7 +29,7 @@ export function siteHref(mount: string, url = '/'): string {
 }
 
 export function absHref(url: string): string {
-  const base = import.meta.env.BASE_URL || '/';
+  const base = import.meta.env?.BASE_URL || '/';
   const root = base.endsWith('/') ? base : `${base}/`;
   const trimmed = url.replace(/^\//, '');
   if (!trimmed) return root;

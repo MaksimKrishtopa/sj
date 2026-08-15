@@ -3,7 +3,7 @@ import path from 'node:path';
 import { VAGON_DIR, rewriteSiteLinks } from './paths';
 import type { PageDoc } from './types';
 import {
-  dropProcessSections,
+  compactFieldsToMarkdown,
   extractFaq,
   extractField,
   extractH1,
@@ -11,6 +11,8 @@ import {
   extractLinks,
   extractUrl,
   mdToHtml,
+  polishPublicHtml,
+  toPublicMarkdown,
 } from './md';
 
 export const VAGON_BRAND = 'Завод вагон-домов';
@@ -76,7 +78,12 @@ export const VAGON_SERVICES = [
 ];
 
 function brandize(s: string): string {
-  return s.replace(/\{БРЕНД\}/g, VAGON_BRAND).replace(/\+7 922 510 0555/g, VAGON_PHONE);
+  return s
+    .replace(/Завод\s*\{БРЕНД\}/g, VAGON_BRAND)
+    .replace(/\{БРЕНД\}/g, VAGON_BRAND)
+    .replace(/Завод\s+Завод вагон-домов/g, VAGON_BRAND)
+    .replace(/завода\s+Завод вагон-домов/g, `завода ${VAGON_BRAND}`)
+    .replace(/\+7 922 510 0555/g, VAGON_PHONE);
 }
 
 function parseCardBlocks(raw: string): PageDoc[] {
@@ -91,7 +98,7 @@ function parseCardBlocks(raw: string): PageDoc[] {
     const h1 = brandize(extractField(block, ['H1']) || extractH1(block) || title);
     const priceMatch = block.match(/\*\*Цена:\*\*\s*([^\n(]+)/);
     const price = priceMatch?.[1]?.trim();
-    const html = rewriteSiteLinks(mdToHtml(brandize(dropProcessSections(block))), 'vagon-dom');
+    const html = rewriteSiteLinks(polishPublicHtml(mdToHtml(brandize(toPublicMarkdown(block)))), 'vagon-dom');
     pages.push({
       url,
       title,
@@ -121,7 +128,7 @@ function parseBatchPages(raw: string): PageDoc[] {
     const title = brandize(extractField(block, ['Title']) || extractH1(block) || url);
     const description = brandize(extractField(block, ['Description']));
     const h1 = brandize(extractField(block, ['H1']) || extractH1(block) || title);
-    const html = rewriteSiteLinks(mdToHtml(brandize(dropProcessSections(block))), 'vagon-dom');
+    const html = rewriteSiteLinks(polishPublicHtml(mdToHtml(brandize(toPublicMarkdown(block)))), 'vagon-dom');
     pages.push({
       url,
       title,
@@ -132,6 +139,35 @@ function parseBatchPages(raw: string): PageDoc[] {
       faq: extractFaq(block).map((f) => ({ q: brandize(f.q), a: brandize(f.a) })),
       links: extractLinks(block),
       kind: url === '/' ? 'home' : 'page',
+    });
+  }
+  return pages;
+}
+
+function parseFieldPages(raw: string): PageDoc[] {
+  const pages: PageDoc[] = [];
+  const chunks = raw.split(/\n### /).slice(1);
+  for (const chunk of chunks) {
+    const block = `### ${chunk}`;
+    if (!/\*\*URL:\*\*/i.test(block)) continue;
+    const url = extractUrl(block, '');
+    if (!url || url === '/') continue;
+    const title = brandize(extractField(block, ['Title']) || extractH1(block) || url);
+    const description = brandize(extractField(block, ['Description']));
+    const h1 = brandize(extractField(block, ['H1']) || title);
+    const compact = compactFieldsToMarkdown(block);
+    const body = compact.length > 40 ? compact : toPublicMarkdown(block);
+    const html = rewriteSiteLinks(polishPublicHtml(mdToHtml(brandize(body))), 'vagon-dom');
+    pages.push({
+      url,
+      title,
+      description,
+      h1,
+      lead: brandize(extractLead(block)),
+      html,
+      faq: extractFaq(block).map((f) => ({ q: brandize(f.q), a: brandize(f.a) })),
+      links: extractLinks(block),
+      kind: 'page',
     });
   }
   return pages;
@@ -195,7 +231,9 @@ export function loadVagonPages(): PageDoc[] {
   for (const f of files) {
     if (!/КОНТЕНТ/.test(f) && !f.includes('13_')) continue;
     const raw = fs.readFileSync(path.join(VAGON_DIR, f), 'utf8');
-    const parsed = f.includes('13_') ? parseCardBlocks(raw) : parseBatchPages(raw);
+    const parsed = f.includes('13_')
+      ? parseCardBlocks(raw)
+      : [...parseBatchPages(raw), ...parseFieldPages(raw)];
     for (const p of parsed) {
       if (seen.has(p.url)) continue;
       seen.add(p.url);

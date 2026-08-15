@@ -38,11 +38,13 @@ const crumbs = [
 <section class="section">
   <div class="wrap prose" set:html={doc.html} />
 </section>
-<section class="section alt soft">
-  <div class="wrap">
-    <Faq items={doc.faq} />
-  </div>
-</section>
+{doc.faq.length > 0 && (
+  <section class="section alt soft">
+    <div class="wrap">
+      <Faq items={doc.faq} />
+    </div>
+  </section>
+)}
 {doc.links.length > 0 && (
   <section class="section">
     <div class="wrap">

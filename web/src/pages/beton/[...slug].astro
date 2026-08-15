@@ -20,6 +20,10 @@ export function getStaticPaths() {
       seen.add(short);
       paths.push({ params: { slug: short }, props: { doc: page } });
     }
+    if (page.url === '/tovarnyy-beton/' && !seen.has('tovarnyy-beton-hub')) {
+      seen.add('tovarnyy-beton-hub');
+      paths.push({ params: { slug: 'tovarnyy-beton-hub' }, props: { doc: page } });
+    }
   }
   return paths;
 }

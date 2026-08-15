@@ -10,24 +10,79 @@ import {
   extractLinks,
   extractUrl,
   mdToHtml,
+  polishPublicHtml,
+  toPublicHtml,
 } from './md';
 
 const SKIP = new Set(['kejsy.md', 'tone-of-voice.md']);
 
-function blocksToHtml(text: string): string {
+function cleanJazzTitle(s: string): string {
+  return s
+    .replace(/`\[.*?\]`/g, '')
+    .replace(/\[.*?\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function jazzDashBlocks(text: string): string {
   const section = text.match(/## 2[–-]3\. Блоки[\s\S]*?(?=\n## 4\.|$)/);
-  if (!section) return mdToHtml(text);
+  if (!section) return '';
   const lines = section[0].split('\n').filter((l) => l.trim().startsWith('- **'));
   const parts: string[] = [];
   for (const line of lines) {
     const m = line.match(/- \*\*([^*]+)\*\*:?\s*(.*)/);
     if (!m) continue;
-    const title = m[1].replace(/`\[.*?\]`/g, '').replace(/\[.*?\]/g, '').trim();
-    const body = m[2].replace(/`\[.*?\]`/g, '').replace(/→\s*\/[\w\-./]+/g, '').trim();
+    const title = cleanJazzTitle(m[1]);
+    const body = m[2]
+      .replace(/`\[.*?\]`/g, '')
+      .replace(/\[.*?\]/g, '')
+      .replace(/→\s*\/[\w\-./]+/g, '')
+      .trim();
     if (!body) continue;
+    if (/^hero/i.test(title)) {
+      parts.push(`<p>${body}</p>`);
+      continue;
+    }
     parts.push(`<section class="jz-block"><h2>${title}</h2><p>${body}</p></section>`);
   }
   return parts.join('\n');
+}
+
+function jazzNumberedBlocks(text: string): string {
+  const section = text.match(/## 3\. Контент по блокам[\s\S]*?(?=\n## 4\.|$)/);
+  if (!section) return '';
+  const blocks = section[0].split(/\n### Блок \d+\.\s*/).slice(1);
+  const parts: string[] = [];
+  for (const block of blocks) {
+    const title = cleanJazzTitle(block.match(/^([^\n]+)/)?.[1] || '');
+    let body = block
+      .replace(/^[^\n]+\n/, '')
+      .replace(/\*\*H1:[^*]+\*\*\.?\s*/g, '')
+      .replace(/`\[.*?\]`/g, '')
+      .replace(/\[.*?\]/g, '')
+      .trim();
+    if (!body) continue;
+    if (/^hero/i.test(title)) {
+      parts.push(`<p>${body}</p>`);
+      continue;
+    }
+    parts.push(`<section class="jz-block"><h2>${title}</h2>${mdToHtml(body)}</section>`);
+  }
+  return parts.join('\n');
+}
+
+function blocksToHtml(text: string): string {
+  const fromDash = jazzDashBlocks(text);
+  if (fromDash.length > 80) return fromDash;
+  const fromNum = jazzNumberedBlocks(text);
+  if (fromNum.length > 80) return fromNum;
+  return toPublicHtml(text);
+}
+
+function rewriteJazzRoutes(html: string): string {
+  return html
+    .replace(/\/cases\//g, '/kejsy/')
+    .replace(/\/tariffs\//g, '/tarify/');
 }
 
 function parseJazzFile(file: string): PageDoc | null {
@@ -39,9 +94,8 @@ function parseJazzFile(file: string): PageDoc | null {
   const description = extractField(raw, ['Description']) || extractLead(raw).slice(0, 160);
   const h1 = extractH1(raw) || title;
   const lead = extractLead(raw);
-  let html = blocksToHtml(raw);
-  if (html.length < 80) html = mdToHtml(raw);
-  html = rewriteSiteLinks(html, 'seojazz');
+  let html = polishPublicHtml(blocksToHtml(raw));
+  html = rewriteJazzRoutes(rewriteSiteLinks(html, 'seojazz'));
   const faq = extractFaq(raw);
   const links = extractLinks(raw);
   return { url, title, description, h1, lead, html, faq, links, kind: 'page' };
@@ -95,6 +149,8 @@ export const JAZZ_NAV: { href: string; text: string }[] = [
   { href: '/seo-prodvizhenie-po-cms/', text: 'CMS' },
   { href: '/sozdanie-sajtov/', text: 'Сайты' },
   { href: '/kejsy/', text: 'Кейсы' },
+  { href: '/tarify/', text: 'Тарифы' },
+  { href: '/kontakty/', text: 'Контакты' },
 ];
 
 export function jazzRelated(doc: PageDoc): PageLink[] {

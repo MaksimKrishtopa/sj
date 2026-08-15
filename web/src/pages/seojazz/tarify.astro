@@ -1,0 +1,52 @@
+---
+import JazzLayout from '../../layouts/JazzLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { JAZZ_TARIFFS } from '../../lib/seojazz';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'OfferCatalog',
+    name: 'Тарифы SEO Jazz',
+    itemListElement: JAZZ_TARIFFS.map((t, i) => ({
+      '@type': 'Offer',
+      position: i + 1,
+      name: t.name,
+      description: t.text,
+      priceCurrency: 'RUB',
+    })),
+  },
+];
+---
+<JazzLayout
+  title="Тарифы SEO Jazz — от 45 000 ₽/мес за заявки и выручку"
+  description="Тарифы SEO Jazz: Старт 45 000, Рост 65 000, Бизнес 95 000, Лидер 140 000, Под ключ 220 000 ₽/мес. KPI и финансовая гарантия в договоре."
+  path="/tarify/"
+  jsonLd={jsonLd}
+>
+  <section class="jz-hero">
+    <div class="wrap">
+      <div class="jz-kicker">Оплата за результат</div>
+      <h1>Тарифы: платите за заявки, а не за позиции</h1>
+      <p>Пять пакетов под задачу. KPI фиксируем в договоре. На старших тарифах — финансовая гарантия.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="jz-grid g3">
+        {JAZZ_TARIFFS.map((t) => (
+          <article class="jz-card">
+            <h3>{t.name}</h3>
+            <b>{t.price}</b>
+            <p>{t.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="section soft" id="lead">
+    <div class="wrap">
+      <LeadForm title="Подберём тариф" subtitle="Разберём нишу и скажем, какой пакет даст заявки" cta="Получить рекомендации" />
+    </div>
+  </section>
+</JazzLayout>

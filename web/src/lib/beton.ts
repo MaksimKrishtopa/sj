@@ -3,15 +3,13 @@ import path from 'node:path';
 import { BETON_DIR, rewriteSiteLinks } from './paths';
 import type { PageDoc } from './types';
 import {
-  dropProcessSections,
   extractFaq,
   extractField,
   extractH1,
   extractLead,
   extractLinks,
   extractUrl,
-  mdToHtml,
-  stripMetaPreamble,
+  toPublicHtml,
 } from './md';
 
 const SKIP = new Set([
@@ -43,8 +41,7 @@ function parseBetonFile(file: string, isBlog: boolean): PageDoc | null {
     extractLead(raw).slice(0, 160);
   const h1 = extractH1(raw) || title;
   const lead = extractLead(raw);
-  const body = dropProcessSections(stripMetaPreamble(raw));
-  const html = rewriteSiteLinks(mdToHtml(body), 'beton');
+  const html = rewriteSiteLinks(toPublicHtml(raw), 'beton');
   return {
     url,
     title,

@@ -1,0 +1,38 @@
+---
+import JazzLayout from '../../layouts/JazzLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+---
+<JazzLayout
+  title="Контакты SEO Jazz — телефон, Telegram, заявка"
+  description="Связаться с SEO Jazz: +7 499 990-55-46, Telegram @IldarNev. Разберём сайт и скажем, откуда взять заявки."
+  path="/kontakty/"
+>
+  <section class="jz-hero">
+    <div class="wrap">
+      <div class="jz-kicker">Связь</div>
+      <h1>Контакты SEO Jazz</h1>
+      <p>Ответим за 15 минут в рабочее время. Разберём нишу и покажем, откуда взять заявки.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap jz-grid g3">
+      <article class="jz-card">
+        <h3>Телефон</h3>
+        <p><a href="tel:+74999905546">+7 499 990-55-46</a></p>
+      </article>
+      <article class="jz-card">
+        <h3>Telegram</h3>
+        <p><a href="https://t.me/IldarNev">@IldarNev</a></p>
+      </article>
+      <article class="jz-card">
+        <h3>Формат работы</h3>
+        <p>Москва и Россия. Удалённо по всей стране.</p>
+      </article>
+    </div>
+  </section>
+  <section class="section soft" id="lead">
+    <div class="wrap">
+      <LeadForm title="Написать нам" subtitle="Имя и телефон — перезвоним и разберём задачу" cta="Отправить заявку" />
+    </div>
+  </section>
+</JazzLayout>
